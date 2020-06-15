@@ -192,6 +192,38 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
   #header .logo {
     font-size: 28px;
   }
+
+.top-rhs .btn {
+	display:none;
+}  
+.mobile-nav a {
+
+    color: #000 !important;
+
+}
+  
+  .mobile-nav-active {
+
+    color: #000;
+
+}
+.mobile-nav-toggle { padding:7px;}
+  .top-rhs .social-links {
+    margin-right: 55px !important;
+
+}
+
+.section-title h2 {
+    font-size: 30px!important;
+
+}
+.d-flex { text-align:center !important}
+
+.services .icon-box .icon {
+
+    display: inline-flex !important;
+
+}
 }
 
 /*--------------------------------------------------------------
@@ -595,7 +627,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 150px 0px;
+  padding: 70px 0px;
 }
 
 .section-bg {
@@ -617,11 +649,11 @@ section {
 .section-title h4 {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+    margin-top:20px;
   padding-bottom: 0;
 	text-transform: uppercase;
-
-}
+    
 /*.section-title p */
 p {
   margin-bottom: 30;
@@ -632,7 +664,6 @@ p {
 }
 
 
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -641,7 +672,7 @@ section.about{}
 .about .section-title{ text-align: left; }
 
 .about .rhs{ }
-.about .rhs P{ margin-bottom: 50px; }
+.about .rhs P{ margin-bottom: 50px;}
 
 
 
@@ -650,7 +681,8 @@ section.about{}
 	section.about{ text-align: center;}
 	.about .section-title{ width: 100%;}
 	.about .section-title h2{text-align: center;}
-	.about .btn-primary{ margin: 0 auto;}
+	.about .btn-primary{ margin:0px auto;}
+	
 		
 }
 
@@ -723,7 +755,6 @@ section.about{}
   background-size: cover;
 }
 
-
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
@@ -732,7 +763,7 @@ section.why-us{ text-align: left;}
 .why-us .section-title{ text-align: left; }
 
 
-.why-us .lhs P{ margin-bottom: 50px; }
+.why-us .lhs P{ margin-bottom: 40px; }
 
 
 @media (max-width: 992px) {
@@ -741,14 +772,9 @@ section.why-us{ text-align: left;}
 	.why-us .section-title{ width: 100%;}
 	.why-us .section-title h2{text-align: center;}
 	.why-us .btn-primary{ margin: 0 auto;}
-		
+    .btn-primary{margin-top: 20px; }	
+    
 }
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Advisors Teams
 --------------------------------------------------------------*/
@@ -801,6 +827,7 @@ section.testimonials{ padding: 0px;}
 
 @media (max-width: 992px) {
 		
+    
 }
 /*--------------------------------------------------------------
 # Footer
