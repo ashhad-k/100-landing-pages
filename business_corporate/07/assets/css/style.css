@@ -192,7 +192,40 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
   #header .logo {
     font-size: 28px;
   }
+.top-rhs .btn {
+	display:none;
+}  
+.mobile-nav a {
+
+    color: #000 !important;
+
 }
+  
+  .mobile-nav-active {
+
+    color: #000;
+
+}
+.mobile-nav-toggle { padding:7px;}
+  .top-rhs .social-links {
+    margin-right: 55px !important;
+
+}
+
+.section-title h2 {
+    font-size: 33px!important;
+    text-align: center;
+
+}
+.d-flex { text-align:center !important}
+
+.services .icon-box .icon {
+
+    display: inline-flex !important;
+
+}
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -491,6 +524,18 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
     margin-left: 20px;
     margin-top: 10px}
 
+@media (max-width:992px){
+    .hdr-lhs .t1  span{
+        display:none;
+     text-align: center!important;
+    }
+   
+    .scroll{
+        display: none;
+    }
+    .hdr-lhs .t1 { display:block;}
+}
+
 #hero h3 {
 	margin-bottom: 30px;
 	font-size: 18px;
@@ -516,7 +561,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 		height: auto;
 	}
 	#hero h1 {
-		font-size: 32px;
+		font-size: 29px;
 		line-height: 46px;
 		margin-bottom: 30px;
 	}
@@ -525,7 +570,11 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 		font-size: 16px;
 		line-height: 24px;
 	}
-
+    #hero h3{
+        text-align: center!important;
+        margin-bottom: 15px;
+    font-size: 20px;
+    }
 }
 /*--------------------------------------------------------------
 # Hero RHS Form
@@ -631,6 +680,15 @@ p {
 	line-height: 20px;
 }
 
+@media (max-width: 992px) {
+    .section-title h4{
+        text-align: center;
+        margin-bottom: 17px;
+        margin-top: 10px;
+    }
+
+
+}
 
 
 /*--------------------------------------------------------------
@@ -800,7 +858,12 @@ section.testimonials{ padding: 0px;}
 
 
 @media (max-width: 992px) {
-		
+    .testimonials .rhs MAIN{
+     font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    
+    }
 }
 /*--------------------------------------------------------------
 # Footer
@@ -829,8 +892,30 @@ section.testimonials{ padding: 0px;}
   transition: 0.3s;
 }
 
-#footer .social-links a:hover {
+.social-links a:hover {
 	background: var(--main-color);
   color: #fff!important;
   text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    #footer .social-links a{
+        
+        line-height: 1px;
+        
+    }
+#footer {
+  color:var(--text-color);
+  font-size: 10px;
+	padding: 60px 0px;
+
+
+}
+    #footer .social-links a {
+    font-size: 18px;
+    padding: 8px 0;
+    margin-top: -9px;
+  
+
+    
 }
