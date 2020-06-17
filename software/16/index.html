@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/vendor/slick_slider/css/style.css">
 	<link rel="stylesheet" href="assets/vendor/aos/aos.css">
+	<link rel="stylesheet" href="assets/vendor/fancybox/fancybox.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/fonts/icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -230,7 +231,13 @@
 					<img src="assets/images/video_img.png" alt="video image" />
 					<div class="play_button">
 						<h2>Watch This Video Presentation <span>To Know More</span></h2>
-						<a class="venobox play-btn mb-4 vbox-item" href="https://www.youtube.com/watch?v=jDDaplaOz7Q" data-vbtype="video" data-autoplay="true"><span class="icon-play-icon"></span></a>
+						<a data-fancybox="" tabindex="0" data-type="iframe" class="venobox play-btn mb-4 vbox-item video-btn" href="https://www.youtube.com/embed/IP7uGKgJL8U"></a>
+
+						<!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/IP7uGKgJL8U" data-target="#myModal">
+						
+						</button> -->
+
+
 					</div>
 				</div>
 			</div>
@@ -499,6 +506,8 @@
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/slick_slider/js/slick.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/fancybox/fancybox.js"></script>
+
 
 
 <script type="text/javascript">
@@ -665,7 +674,42 @@ jQuery(function ($) {
 
 
 
+<script type="text/javascript">
+	$(document).ready(function() {
 
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+// console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+})
+  
+
+
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+    
+
+
+  
+  
+// document ready  
+});
+</script>
 
 
 </body>
