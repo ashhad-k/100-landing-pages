@@ -792,8 +792,10 @@ p {
 	padding-bottom: 150px;
 }
 .register .c2 {
+/*
 	background: url("../img/bg_register.png") right bottom no-repeat #4780f1;
 	background-size: cover;
+*/
 	padding: 70px;
 	color: #fff;
 	display: flex;
