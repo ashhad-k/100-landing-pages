@@ -15,7 +15,7 @@
 
   <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
 	
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/custom-style.css" rel="stylesheet">
 
 
 </head>
@@ -42,32 +41,15 @@
      
       <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
-      <!-- <nav class="nav-menu d-none d-lg-block">
+      <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#cta">Subscribe</a></li>
+          <li><a href="#faq">About The Lectors</a></li>
+          <li><a href="#footer">Contact</a></li>
+		  <a href="#feature" class="get-started-btn scrollto">Register</a>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -83,7 +65,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Banner Section ======= -->
-  <section id="banner" class="banner-section">
+  <section id="banner" class="banner-section" style="background: url('assets/img/hero-bg.jpg') top center;">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row pd-banner">
 	  <div class="col-md-6 col-xm-12 col-xs-12 col-lg-6 mg-40">
@@ -192,7 +174,7 @@
 				
 				<div id="menu1" class="tabcontent">
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">08:00 - 09:30</p>
-				<img src="assets/img/schedule-1.png">
+				<img src="assets/img/schedule/schedule-1.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>Vestibulum id purus molestie, faucibus lectus vel, aliquet </h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tellus pretium, interdum odio non, eleifend quam. In accumsan, augue ut interdum egestas</p>
@@ -200,7 +182,7 @@
 				</div>
 				<hr>
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">09:30 - 10:00</p>
-				<img src="assets/img/schedule-2.png">
+				<img src="assets/img/schedule/schedule-2.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>In nec augue sem. Cras non sem imperdiet, accumsan</h3>
 				<p>Vivamus consectetur pharetra varius. Integer finibus bibendum erat, et sollicitudin velit volutpat vel. Duis ante ex, dapibus in urna nec, convallis iaculis metus</p>
@@ -209,7 +191,7 @@
 				
 				<hr>
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">10:00 - 11:30</p>
-				<img src="assets/img/schedule-3.png">
+				<img src="assets/img/schedule/schedule-3.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>Fusce rhoncus urna id rutrum dapibus. Mauris eu urna mollis</h3>
 				<p>Cras quis turpis felis. Mauris euismod, libero in tristique pulvinar, eros justo gravida velit, pretium congue arcu urna a risus. Nam id scelerisque turpis, eu dictum</p>
@@ -221,7 +203,7 @@
 				
 				<div id="menu2" class="tabcontent">
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">08:00 - 09:30</p>
-				<img src="assets/img/schedule-1.png">
+				<img src="assets/img/schedule/schedule-2.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>Vestibulum id purus molestie, faucibus lectus vel, aliquet </h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tellus pretium, interdum odio non, eleifend quam. In accumsan, augue ut interdum egestas</p>
@@ -229,7 +211,7 @@
 				</div>
 				<hr>
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">09:30 - 10:00</p>
-				<img src="assets/img/schedule-2.png">
+				<img src="assets/img/schedule/schedule-1.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>In nec augue sem. Cras non sem imperdiet, accumsan</h3>
 				<p>Vivamus consectetur pharetra varius. Integer finibus bibendum erat, et sollicitudin velit volutpat vel. Duis ante ex, dapibus in urna nec, convallis iaculis metus</p>
@@ -238,7 +220,7 @@
 				
 				<hr>
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">10:00 - 11:30</p>
-				<img src="assets/img/schedule-3.png">
+				<img src="assets/img/schedule/schedule-2.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>Fusce rhoncus urna id rutrum dapibus. Mauris eu urna mollis</h3>
 				<p>Cras quis turpis felis. Mauris euismod, libero in tristique pulvinar, eros justo gravida velit, pretium congue arcu urna a risus. Nam id scelerisque turpis, eu dictum</p>
@@ -248,7 +230,7 @@
 				
 				<div id="menu3" class="tabcontent">
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">08:00 - 09:30</p>
-				<img src="assets/img/schedule-1.png">
+				<img src="assets/img/schedule/schedule-1.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>Vestibulum id purus molestie, faucibus lectus vel, aliquet </h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tellus pretium, interdum odio non, eleifend quam. In accumsan, augue ut interdum egestas</p>
@@ -256,7 +238,7 @@
 				</div>
 				<hr>
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">09:30 - 10:00</p>
-				<img src="assets/img/schedule-2.png">
+				<img src="assets/img/schedule/schedule-1.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>In nec augue sem. Cras non sem imperdiet, accumsan</h3>
 				<p>Vivamus consectetur pharetra varius. Integer finibus bibendum erat, et sollicitudin velit volutpat vel. Duis ante ex, dapibus in urna nec, convallis iaculis metus</p>
@@ -265,7 +247,7 @@
 				
 				<hr>
 				<img src="assets/img/clock.png" class="img-schedule-clock"><p class="time">10:00 - 11:30</p>
-				<img src="assets/img/schedule-3.png">
+				<img src="assets/img/schedule/schedule-2.jpg" class="schedule-img">
 				<div class="bottom-side">
 				<h3>Fusce rhoncus urna id rutrum dapibus. Mauris eu urna mollis</h3>
 				<p>Cras quis turpis felis. Mauris euismod, libero in tristique pulvinar, eros justo gravida velit, pretium congue arcu urna a risus. Nam id scelerisque turpis, eu dictum</p>
@@ -276,24 +258,41 @@
 					
 				</div>
 				</div>
+				</div>
 
     </section>
 	
 	
 	
 		    <!-- ======= Image Section ======= -->
-    <section id="mid-image" class="mid-image">
-      <div class="container-fluid" data-aos="fade-up">
-		<div class="row">
-			<div class="col-md-5">
-			</div>
-			<div class="col-md-5">
-			</div>
-			<div class="col-md-2">
-			</div>
-			</div>
-			  
-      </div>
+	
+	<section class="gallery-block compact-gallery">
+        <div class="container-fluid full-lenght" data-aos="fade-up">
+           
+            <div class="row no-gutters">
+                <div class="width-40 item zoom-on-hover">
+                    <a class="lightbox" href="assets/img/mid-image1.jpg">
+                        <img class="img-fluid image" src="assets/img/mid-image1.jpg">
+                      
+                    </a>
+                </div>
+               <div class="width-40 item zoom-on-hover">
+                    <a class="lightbox" href="assets/img/mid-image2.jpg">
+                        <img class="img-fluid image" src="assets/img/mid-image2.jpg">
+                      
+                    </a>
+                </div>
+                <div class="width-20 item zoom-on-hover">
+                    <a class="lightbox" href="assets/img/mid-image33.jpg">
+                        <img class="img-fluid image" src="assets/img/mid-image3.jpg">
+                      
+                    </a>
+                </div>
+             
+            </div>
+        </div>
+      
+      
     </section>
 	
 	
@@ -358,7 +357,7 @@
         <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-item">
-		  <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
+		  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
             <p>
               <img src="assets/img/quote.png" class="testimonial-img-quote" alt="">
               Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
@@ -370,7 +369,7 @@
           </div>
 
           <div class="testimonial-item">
-		  <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
+		  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
             <p>
             <img src="assets/img/quote.png" class="testimonial-img-quote" alt="">
               Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
@@ -382,7 +381,7 @@
           </div>
 
           <div class="testimonial-item">
-		  <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
+		  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
             <p>
               <img src="assets/img/quote.png" class="testimonial-img-quote" alt="">
               Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
@@ -394,7 +393,7 @@
           </div>
 
           <div class="testimonial-item">
-		  <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
+		  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
             <p>
               <img src="assets/img/quote.png" class="testimonial-img-quote" alt="">
               Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
@@ -459,7 +458,7 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <a data-toggle="collapse" class="collapse" href="#faq-list-1">Cherly S. Barr<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <a data-toggle="collapse" class="collapse" href="#faq-list-1">Cherly S. Barr<i class='bx bx-plus-circle icon-show'></i><i class='bx bx-minus-circle icon-close'></i></a>
               <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
                 <p>
                   Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -468,7 +467,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-             <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Patrick Rizzuto<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+             <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Patrick Rizzuto<i class='bx bx-plus-circle icon-show'></i><i class='bx bx-minus-circle icon-close'></i></a>
               <div id="faq-list-2" class="collapse" data-parent=".faq-list">
                 <p>
                   Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -477,7 +476,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Belinda Almaraz <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Belinda Almaraz<i class='bx bx-plus-circle icon-show'></i><i class='bx bx-minus-circle icon-close'></i></a>
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                 <p>
                   Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
@@ -486,7 +485,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-             <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Hayden Gibney <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+             <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Hayden Gibney<i class='bx bx-plus-circle icon-show'></i><i class='bx bx-minus-circle icon-close'></i></a>
               <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                 <p>
                   Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
@@ -495,7 +494,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Skye Rembert <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Skye Rembert <i class='bx bx-plus-circle icon-show'></i><i class='bx bx-minus-circle icon-close'></i></a>
               <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                 <p>
                   Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
@@ -511,13 +510,15 @@
 
     </section><!-- End Frequently Asked Questions Section -->
 
+
+
+
+
   
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="copy-bg">
-
-    <div class="footer-top">
+  <footer id="footer">
       <div class="container-fluid">
         <div class="row">
 			<div class="col-md-12 full-lenght">
@@ -530,7 +531,6 @@
         </div>
       </div>
     </div>
-    </div>
   
 	<section class="copy-bg">
     <div class="container">
@@ -542,7 +542,7 @@
           &copy; Copyright <strong><span>2020 EDU</span></strong>. All Rights Reserved
         </div>
 		
-		<a href="#" class="back-to-top2">To Top</a>
+		<a href="#" class="back-to-top">To Top</a>
      
       </div>
       </div>
@@ -550,8 +550,6 @@
 	 </section>
   </footer>  <!--  End Footer -->
 
- <!--  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->
- <!-- <div id="preloader"></div> -->
 
   <!-- Vendor JS Files  -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -567,25 +565,10 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   
-<script>
-function  openTab(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
+    </script>
 
 </body>
 
