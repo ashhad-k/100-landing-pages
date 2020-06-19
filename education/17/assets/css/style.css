@@ -86,8 +86,28 @@ h2 {
 	padding: 0px 12px;
 }
 
+@media screen and (max-width:767px) and (orientation: landscape) {
+#header .container {
+		max-width:100% !important;
+	}
+}
+
 @media screen and (max-width:767px){
-#header .bx {display: none;}
+	
+#header img.img-fluid {
+    width: 110px;
+}
+
+#header .bx {
+	display: none;
+}
+
+#header {
+    padding: 10px 0;
+}
+.img-fluid {
+    margin-top: 11px;
+}
 }
 
 /*--------------------------------------------------------------
@@ -226,12 +246,13 @@ nav.nav-menu.d-none.d-lg-block {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Hero/ Banner Section
 --------------------------------------------------------------*/
 .pd-banner {
 	padding-top:200px; 
-	padding-bottom:200px !important;
+	padding-bottom:200px ;
 }
 
 .banner-section h3 {
@@ -324,6 +345,23 @@ button.submit-btn:hover {
 	
 .pd-banner {  
 	text-align: center;}
+
+
+.pd-banner {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.banner-section h3 {
+    font-size: 18px;
+    margin-bottom: 50px !important;
+}
+.banner-section h1 {
+    font-size: 30px;
+}
+.banner-section h2 {
+    font-size: 25px;
+}
 }
 
 /*--------------------------------------------------------------
@@ -530,7 +568,7 @@ p.time {
 
 
 .gallery-block{
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   padding-top: 60px;
 }
 
@@ -543,7 +581,7 @@ p.time {
 
 .gallery-block.compact-gallery .item .image{
   transition: 0.8s ease;
-  min-height:326px;
+  min-height: 100%;
   width:100%;
 }
 
@@ -898,6 +936,10 @@ button.btn-subs:hover {
     color: #6de09b;
 }
 
+@media only screen and (max-width:767px){
+.faq .nav-link {
+margin: 13px 11px;}
+}
 
 /*--------------------------------------------------------------
 # Footer

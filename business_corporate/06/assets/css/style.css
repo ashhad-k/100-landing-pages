@@ -323,7 +323,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 28px;
+  top: 20px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -364,7 +364,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #fff;
+/*  color: #fff;*/
   padding: 10px 20px;
   font-weight: 300;
   outline: none;
@@ -428,6 +428,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
   color:  var(--main-color);;
 }
 
+.mobile-nav-active .social-links{ display: flex; justify-content: center;}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -435,8 +436,10 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 #hero {
 	width: 100%;
 	height: 100vh;
+/*
 	background: url("../img/bg_hero.jpg") top right no-repeat;
 	background-size: cover;
+*/
 	position: relative;
 	color: #fff;
 }
@@ -506,13 +509,16 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 	#hero h1 {
 		font-size: 32px;
 		line-height: 46px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		padding-bottom: 0px
 	}
 	#hero p {
 		margin-top: 10px;
 		font-size: 16px;
 		line-height: 24px;
 	}
+	#hero .scroll{display: none}
+	#hero h1:after{ display: none}
 
 }
 /*--------------------------------------------------------------
@@ -557,7 +563,6 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 }
 
 @media (max-width: 992px) {
-	#hero{ background: url("../img/bg_hero.jpg") center top no-repeat; background-size: cover;}
 	.cus_selt {
 		text-align: left;
 	}
@@ -629,7 +634,7 @@ p {
   margin: 10px 0 20px ;
 }
 .services .icon-box.shades{ 
-	 background-image: url("../img/shade-lhs.png"), url("../img/shade-rhs.png");
+/*	 background-image: url("../img/shade-lhs.png"), url("../img/shade-rhs.png");*/
   background-position: left  bottom, right bottom;
   background-repeat: no-repeat, no-repeat;
 	 padding: 40px;
@@ -661,7 +666,8 @@ p {
 @media (max-width: 992px) {
 	.services{ padding-bottom: 0px;}
 	.services .section-title P{margin-bottom: 20px; margin-top: 70px;}
-	.services .icon-box{ padding: 10px}
+	.services .icon-box{ padding: 10px; text-align: center;}
+	.services .icon-box h4 { text-align: center;}
 		
 }
 
@@ -694,10 +700,12 @@ section.about{ padding: 00px 0px 00px 0px;}
 @media (max-width: 992px) {
 	.about .rhs{ margin-top: 100px;}
 	section.about{ text-align: center;}
-	.about .section-title{ width: 100%;}
+	.about .section-title{ width: 100%; padding-top: 50px;}
 	.about .section-title h2{text-align: center;}
 	.about .btn-primary{ margin: 0 auto;}
 		
+	.about .rhs:after{left: 0px;}
+	
 }
 
 
@@ -706,7 +714,7 @@ section.about{ padding: 00px 0px 00px 0px;}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.clients {padding: 150px 0px; text-align: center;}
+.clients {padding: 100px 0px; text-align: center;}
 .clients .section-title{padding-bottom: 80px;}
 
 
@@ -756,6 +764,8 @@ section.about{ padding: 00px 0px 00px 0px;}
 .clients .c-item > div:last-child{ border-right: 0px;}
 
 @media (max-width: 992px) {
+	.clients .c-item{ padding-bottom: 0px; margin-bottom: 0px;}
+	.clients .clients-carousel{padding-bottom: 20px}
 	
 	
 }
@@ -767,7 +777,7 @@ section.about{ padding: 00px 0px 00px 0px;}
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials{
-	background: url("../img/bg-testimonials.jpg")center no-repeat;
+/*	background: url("../img/bg-testimonials.jpg")center no-repeat;*/
 	background-size: cover;
 	color: #fff;
 	text-align: center;
@@ -892,6 +902,10 @@ section.about{ padding: 00px 0px 00px 0px;}
 }
 
 .b2{ text-align: center; padding: 60px 0px 0px 0px;}
+
+@media (max-width: 992px) {		
+	.blog-posts .member{ margin-bottom: 30px; text-align: center;}
+}
 
 
 /*--------------------------------------------------------------
