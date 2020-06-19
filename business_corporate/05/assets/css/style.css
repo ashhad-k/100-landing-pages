@@ -191,6 +191,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
   #header .logo {
     font-size: 28px;
   }
+	.social-links{ margin-right: 35px;}
 }
 
 /*--------------------------------------------------------------
@@ -392,11 +393,11 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #fff;
+/*  color: #fff;*/
   padding: 10px 20px;
   font-weight: 300;
   outline: none;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
@@ -463,8 +464,10 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 #hero {
 	width: 100%;
 	height: 100vh;
+/*
 	background: url("../img/bg_hero.jpg") top right no-repeat;
 	background-size: cover;
+*/
 	position: relative;
 	color: #fff;
 }
@@ -609,9 +612,11 @@ color: #fff;
 	justify-content: space-between
 }
 /* not in used - html commented*/
+/*
 .sbx {
-	background: transparent url("http://blog.idevelopweb.site/wp-content/uploads/2016/05/nw_selarw.png") no-repeat scroll 97.5% center;
+	background: transparent url("../img/nw_selarw.png") no-repeat scroll 97.5% center;
 }
+*/
 .cus_selt {
 	padding: 15px 20px;
 	display: block;
@@ -627,7 +632,7 @@ color: #fff;
 	line-height: 20px;
 }
 @media (max-width: 992px) {
-	#hero{ background: url("../img/bg_hero.jpg") center top no-repeat; background-size: cover;}
+/*	#hero{ background: url("../img/bg_hero.jpg") center top no-repeat; background-size: cover;}*/
 	.cus_selt {
 		text-align: left;
 	}
@@ -683,12 +688,20 @@ p {
 	line-height: 22px;
 }
 
+@media (max-width: 992px) {
+/*
+	section{
+	padding-top: 100px!important;
+	padding-bottom: 80px!important;}
+*/
+		
+}
+
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about{ padding: 150px 0px 150px 0px; text-align: center;}
-
 .about .section-title{margin-bottom: 100px;}
 
 .about h3 {
@@ -701,8 +714,15 @@ p {
 
 
 @media (max-width: 992px) {
+	
+	.about{ padding: 70px 0px 70px 0px; text-align: center;}
+.about .section-title{margin-bottom: 50px;}
+
 	.about .mid { padding: 50px 0px;}
 	.about .mid .x1{ display: none}
+	.about .section-title{ margin-bottom: 50px}
+	
+	.about .lhs{margin-bottom: 50px}
 		
 }
 
@@ -711,7 +731,7 @@ p {
 # Event
 --------------------------------------------------------------*/
 .event{  
-	background: url("../img/bg_event.png")   #2240ed;
+/*	background: url("../img/bg_event.png")   #2240ed;*/
 	padding: 120px 0px;
 	text-align: left;
 	color: #fff;
@@ -729,7 +749,8 @@ p {
 
 .event .lhs{ padding-left: 20px;}
 .event .rhs{}
-.event .rhs MAIN{background: url("../img/68.png") center no-repeat;
+.event .rhs MAIN{
+/*	background: url("../img/68.png") center no-repeat;*/
 	min-height: 550px;
 	display: flex; color: #fff; align-items: center; flex-direction: column; justify-content: center;}
 .event .rhs MAIN h1{  margin: 5px 0px; font-size: 64px; font-weight: 700;}
@@ -762,7 +783,7 @@ p {
 
 
 @media (max-width: 992px) {
-	
+	.event .section-title h2{ text-align: center;}
 	
 }
 
@@ -835,6 +856,13 @@ p {
   opacity: 1;
 }
 
+
+@media (max-width: 992px) {
+	.speakers .section-title{}
+	.speakers .section-title{padding-bottom: 40px;}
+	.speakers .member{margin-bottom: 10px; padding-bottom: 20px;}
+
+}
 
 
 /*--------------------------------------------------------------
@@ -1038,6 +1066,11 @@ p {
 	
 }
 
+@media (max-width: 992px) {
+	.blog-posts .member{margin-bottom: 30px}
+
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1055,7 +1088,7 @@ p {
 
 .parallax {
   /* The image used */
-	background: url("../img/bg_cta.jpg") ;
+/*	background: url("../img/bg_cta.jpg") ;*/
 	
   /* Set a specific height */
 /*  height: 300px;*/
@@ -1292,6 +1325,7 @@ p {
   .faq .faq-list {
     padding: 0;
   }
+	.faq{padding-bottom: 50px}
 }
 
 
