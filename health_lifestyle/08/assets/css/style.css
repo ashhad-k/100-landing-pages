@@ -458,7 +458,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (pointer: coarse) and (hover: none) {
   #hero header {
+/*
     background:url("../img/hero-bg2.jpg") black no-repeat top center scroll;
+	  background-size: cover;
+*/
+	  height: auto;
+	  padding: 100px 0px
   }
   #hero header video {
     display: none;
@@ -689,6 +694,7 @@ section {
      padding: 0px; margin-top:00px 
   }
 
+	#hdr-form FORM{margin-bottom: 50px}
 }
 
 
@@ -758,8 +764,10 @@ section {
 # about
 --------------------------------------------------------------*/
 section.about{ 
+/*
 	 background: url("../img/bg_about.jpg") top center;
   background-size: cover;
+*/
 	min-height: 772px;
 	color: #fff;
 	display: flex; align-items: flex-end;
@@ -774,6 +782,7 @@ section.about .btn-register{ background: #69dbd3; border:0px!important; color: #
 @media (max-width: 992px), (max-height: 500) {
  section.about .section-title h2{  text-align: center; padding-top: 100px;}
 	section.about { text-align: center;}
+	section.about .section-title h2{ padding: 0px;  color: #333}
 
 }
 
@@ -856,15 +865,19 @@ section.about .btn-register{ background: #69dbd3; border:0px!important; color: #
   opacity: 1;
 }
 
+@media (max-width: 992px) {
 
-
+.team .member{ margin: 0px auto}
+}
 
 /*--------------------------------------------------------------
 # Cta 
 --------------------------------------------------------------*/
 .cta {
+/*
 background: url("../img/bg_cta.jpg") top center;
   background-size: cover;
+*/
   padding: 60px 0;
 }
 
