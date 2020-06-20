@@ -96,6 +96,7 @@ h2 {
 	
 #header img.img-fluid {
     width: 110px;
+	margin-top: 11px;
 }
 
 #header .bx {
@@ -105,9 +106,7 @@ h2 {
 #header {
     padding: 10px 0;
 }
-.img-fluid {
-    margin-top: 11px;
-}
+
 }
 
 /*--------------------------------------------------------------
@@ -798,7 +797,7 @@ button.btn-subs:hover {
 }
 
 @media screen and (max-width:767px){
-.cta { background: #000; }
+.cta { background: #000;    text-align: center; }
 .cta p {margin-left: 0; }
 .subscribe {width: 100%; margin-left: -7px; margin-bottom: 10px;}
 .sub { padding-left: 0px;}
@@ -937,8 +936,17 @@ button.btn-subs:hover {
 }
 
 @media only screen and (max-width:767px){
+.faq {
+	text-align:center;
+}	
+	
 .faq .nav-link {
-margin: 13px 11px;}
+margin: 13px 11px;
+}
+.faq .nav-tabs {
+    border-bottom: none;
+    display: inline-flex;
+}
 }
 
 /*--------------------------------------------------------------
