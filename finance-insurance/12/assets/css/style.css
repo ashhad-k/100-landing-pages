@@ -1,16 +1,16 @@
 
 /*--------------------------------------------------------------
-# General - 11
+# General - 12
 --------------------------------------------------------------*/
 body {
    font-family: 'Montserrat', sans-serif;
   color: #444444;
-	background: url("../img/bg-hero.png") top left no-repeat;
+/*	background: url("../img/bg-hero.png") top left no-repeat;*/
 /*	background-size: cover;*/
 }
 
 a {
-  color: #2487ce;
+  color: #2386e1;
 	transition: 0.5s;
 }
 
@@ -306,6 +306,8 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
   }
+	
+
 }
 
 
@@ -329,9 +331,18 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 	padding: 10px 20px!important;
 	border-color: #fff;
 	
-}.top-rhs .btn-outline-primary:hover {
+}
+.top-rhs .btn-outline-primary:hover {
 	border-color: var(--hover-color);
 	
+}
+
+@media (max-width: 992px) {
+	.top-rhs .social-links{display: none}
+	.mobile-nav li.social-links{ display: flex; justify-content: center; align-content: center;}
+	.mobile-nav li.social-links a{ display: inline-block;}
+	
+	.top-rhs .btn-outline-primary{margin-right: 40px; display: none}
 }
 
 
@@ -380,7 +391,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #fff;
+/*  color: #fff;*/
   padding: 10px 20px;
   font-weight: 300;
   outline: none;
@@ -451,8 +462,10 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 #hero {
 	width: 100%;
 	height: 100vh;
+/*
 	background: url("../img/bg-hero.png") top left no-repeat;
 	background-size: cover;
+*/
 	position: relative;
 	color: #fff;
 /*	min-height: 1060px;*/
@@ -528,6 +541,7 @@ a:hover{ color: var(--main-color)!important; outline: none; text-decoration: non
 		font-size: 16px;
 		line-height: 24px;
 	}
+	.scroll{display: none;}
 
 }
 /*--------------------------------------------------------------
@@ -645,7 +659,12 @@ p {
 	line-height: 20px;
 }
 
-
+@media (max-width: 992px) {
+	.section-title h2{ text-align: center;}
+	.section-title h2:after{left: 0; right: 0; margin: 0 auto;}
+	
+	
+}
 
 /*--------------------------------------------------------------
 # Services
@@ -724,9 +743,24 @@ border-radius: 15px;
 
 
 @media (max-width: 992px) {
-	.services{ padding-bottom: 0px;}
+	.services{ padding-bottom: 0px; margin: 0px;}
 	.services .section-title P{margin-bottom: 20px; margin-top: 70px;}
 	
+	.services UL.s1{ display: block; padding: 10px; margin-bottom: 10px;}
+	.services UL.s1 li.nav-item{  margin: 0px;}
+	.services UL.s1 li.nav-item a{ padding: 10px 20px; margin-bottom: 10px; text-align: left;}
+	.services .s1 li.nav-item a i{ display: inline-block; vertical-align: middle; font-size: 30px; margin-bottom: 0px;}
+	
+	.s2 li.nav-item a.active:after{ width: 100%; top: 30px; }
+	.s2 li.nav-item a {
+    padding: 0px;
+    margin: 10px 10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+}
+	.s-cn{display: block;}
+	.s-cn > main.lhs{ display: none}
 }
 
 /*--------------------------------------------------------------
@@ -755,7 +789,13 @@ section.about{ padding: 150px 0px 00px 0px;}
 	.about .section-title{ width: 100%;}
 	.about .section-title h2{text-align: center;}
 	.about .btn-primary{ margin: 0 auto;}
-		
+	
+	section.about{ padding: 050px 0px 00px 0px;}
+	.about .content{ display: block; padding:20px 0px;}
+	.about .content P{ padding: 10px;}
+	.about .btn-light{ margin: 0px;}
+
+	
 }
 
 
@@ -764,7 +804,7 @@ section.about{ padding: 150px 0px 00px 0px;}
 --------------------------------------------------------------*/
 .why-us {
 	padding: 350px 0px;
-	background: url("../img/bg-why-us.png") top right no-repeat;
+/*	background: url("../img/bg-why-us.png") top right no-repeat;*/
 	color: #fff;
 }
 .why-us .section-title{padding-bottom: 80px; color: #fff;}
@@ -805,7 +845,11 @@ section.about{ padding: 150px 0px 00px 0px;}
 .why-us main.widget1 section:nth-child(2) i{ display: block; margin-bottom: 10px; text-align: center; font-size: 40px}
 
 
-
+@media (max-width: 992px) {
+	.why-us{padding: 150px 0px 0px 0px}	
+	.why-us .section-title{margin-bottom: 0px;padding-bottom:20px;}
+	.widget-cn LI{margin-bottom: 20px;}
+}
 
 
 
@@ -874,7 +918,9 @@ section.about{ padding: 150px 0px 00px 0px;}
 
 
 @media (max-width: 992px) {
-	
+	.clients {padding: 100px 0px 150px 0px; }
+
+	.clients .owl-nav{ justify-content: center; top: 120px;}
 	
 }
 
@@ -932,7 +978,20 @@ SECTION.contact{ padding: 0px;}
   margin-top: 30px;
 }
 
-
+@media (max-width: 992px) {
+	#contact .map1{ display: block; height: auto;margin-bottom: -10px;}
+	#contact .map1 .cn1{ 
+		min-width: 250px;
+    left: 20px;
+    right: 20px;
+    position: static;
+    margin-bottom: 30px;
+	
+	}
+	
+	
+	
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -952,4 +1011,9 @@ SECTION.contact{ padding: 0px;}
 #footer .row{ display: flex; align-items: center; justify-content: space-between; }
 #footer .row .copyrights{ text-align: right; font-weight: 300;}
 
-
+@media (max-width: 992px) {
+	#footer{ padding: 20px 20px; text-align: center}
+	#footer .row{display: block;}
+	#footer .copyrights{margin-top: 30px;}
+	
+}
