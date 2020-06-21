@@ -308,7 +308,9 @@ h1, h2, h3, h4, h5, h6 {}
 #hero {
 	width: 100%;
 	height: 100vh;
-	background: url("../img/bg_hero.jpg") top right no-repeat;
+/*	background: url("../img/bg_hero.jpg");*/
+	background-position: top right;
+	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -375,6 +377,7 @@ h1, h2, h3, h4, h5, h6 {}
 	#hero {
 		text-align: center;
 		height: auto;
+		background-position: top center!important;
 	}
 	#hero h1 {
 		font-size: 32px;
@@ -404,10 +407,12 @@ h1, h2, h3, h4, h5, h6 {}
 .hdr-rhs {
 	/*	border: 1px solid #fdb825; */
 	padding: 60px;
+/*
 	background-image: url(../img/bg1a.png), url(../img/bg1b.png);
 	background-position: left top, right bottom;
 	background-repeat: no-repeat, no-repeat;
 	background-size: contain
+*/
 }
 .hdr-rhs h3 {
 	color: #fdb825;
@@ -457,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {}
 	justify-content: space-between
 }
 .sbx {
-	background: transparent url("http://blog.idevelopweb.site/wp-content/uploads/2016/05/nw_selarw.png") no-repeat scroll 97.5% center;
+/*	background: transparent url("http://blog.idevelopweb.site/wp-content/uploads/2016/05/nw_selarw.png") no-repeat scroll 97.5% center;*/
 }
 .cus_selt {
 	padding: 20px;
@@ -625,8 +630,8 @@ section {
 # Section 3 - Schedule X Facts
 --------------------------------------------------------------*/
 .schedule {
-	background: url("../img/hero2.jpg") center 640px no-repeat;
-	/*  background-size: cover;*/
+	background: url("../img/hero2.jpg") center 580px no-repeat;
+/*	  background-size: cover;*/
 	position: relative;
 	padding-top: 10px;
 }
@@ -673,7 +678,9 @@ section {
 }
 @media (max-width: 992px) {
 	.schedule {
-		background: url("../img/hero2.jpg") center 580px no-repeat;
+/*		background: url("../img/hero2.jpg") center 580px no-repeat;*/
+		background-position:  center 580px;
+		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	.schedule h1 {
