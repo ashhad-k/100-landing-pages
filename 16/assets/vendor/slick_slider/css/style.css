@@ -206,3 +206,12 @@
     .slick-dots li.slick-active button:before {
       color: #fb2224;
       opacity: 1; }
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+	[data-aos-delay] {
+		transition-delay: 0 !important;
+	}
+}
