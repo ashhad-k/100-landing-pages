@@ -203,6 +203,31 @@ a:hover {
 .t2 .social-links a:hover {
 	color: var(--main-color);
 }
+
+@media (min-width: 992px) {
+	.top-rhs2{ display: none} 
+}
+@media (max-width: 992px) {
+	.t2 {		display: none;	}
+/*	.top-rhs2{ display: none} */
+}
+
+@media (max-width: 768px) {
+	.top-rhs2 {
+	display: block;
+	align-items: center;
+		padding: 20px;
+		
+}
+	.top-rhs2 .social-links {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+	.top-rhs2 .social-links a{ color: #313131; font-size: 20px;}
+	.top-rhs2 .btn-sm{ margin: 10px}
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -307,6 +332,7 @@ a:hover {
 	padding: 10px 20px
 }
 @media (max-width: 768px) {
+	.fixed-top .btn{ display: none}
 	.get-started-btn {
 		margin: 0 48px 0 0;
 		padding: 5px 18px 6px 18px;
@@ -329,13 +355,13 @@ a:hover {
 	text-align: right;
 }
 .mobile-nav-toggle i {
-	color: #124265;
+	color: #0278f2;
 }
 .mobile-nav {
 	position: fixed;
 	top: 55px;
 	right: 15px;
-	bottom: 15px;
+/*	bottom: 15px;*/
 	left: 15px;
 	z-index: 9999;
 	overflow-y: auto;
@@ -344,7 +370,7 @@ a:hover {
 	opacity: 0;
 	visibility: hidden;
 	border-radius: 10px;
-	padding: 10px 0;
+	padding: 10px 0 20px 0px;
 }
 .mobile-nav * {
 	margin: 0;
@@ -464,8 +490,9 @@ a:hover {
 	#hero {
 		background-attachment: fixed;
 	}
+	
 }
-@media (max-width: 992px), (max-height: 500) {
+@media (max-width: 992px)/*, (max-height: 500)*/ {
 	#hero {
 		height: auto;
 	}
@@ -477,6 +504,8 @@ a:hover {
 		font-size: 18px;
 		line-height: 24px;
 	}
+	#hero .container {	padding-top: 40px; text-align: center;}
+	
 }
 /*--------------------------------------------------------------
 # Hero RHS Form
@@ -627,6 +656,10 @@ section {
 #fold1 .icon-box:hover .title a {
 	color: #111;
 }
+
+@media (max-width: 992px) {
+	#fold1{margin-top: 40px;	}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -648,13 +681,16 @@ section.about {
 }
 @media (max-width: 992px) {
 	.about .rhs {
-		margin-top: 100px;
+		margin-top: 40px;
+		text-align: center;
 	}
 	section.about {
 		text-align: center;
+		padding-bottom: 40px
 	}
 	.about .section-title {
 		width: 100%;
+		text-align: center;
 	}
 	.about .section-title h2 {
 		text-align: center;
@@ -776,7 +812,10 @@ section.services {
 }
 
 
-
+	@media (max-width: 992px) {
+		
+		.cta{text-align: center}
+	}
 
 /*--------------------------------------------------------------
 # Pricing
@@ -866,7 +905,15 @@ section.services {
 .pricing .featured .btn-buy {}
 .pricing .featured .btn-buy:hover {}
 
-
+@media (max-width: 992px) {
+	.pricing{ padding: 100px 0px;}
+	.pricing .section-title h2 {padding-bottom: 00px;}
+	.pricing .box { margin-bottom: 40px}
+	.pricing .featured{height: 100%;}
+	}
+@media (max-width: 992px) {
+	
+	}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -877,7 +924,6 @@ section.services {
 }
 .team .section-title{
 	text-align: left;
-	
 }
 .team .section-title h4{ margin-bottom: 10px;}
 
@@ -978,6 +1024,10 @@ section.services {
 	.team {
 		margin: 30px 10px;
 	}
+	.team .section-title{
+	text-align: center;
+}
+	.team .owl-nav{ top:  auto; justify-content: center;}
 }
 /*--------------------------------------------------------------
 # Footer
@@ -1073,4 +1123,10 @@ section.services {
 	text-align: center; 
 	padding: 40px 0px; 
 border-top:1px solid #192c3f;
-font-weight: 300;}
+font-weight: 300;
+	}
+
+	@media (max-width: 767px) {
+		#footer .footer-contact{margin-bottom: 30px}
+	}
+}
