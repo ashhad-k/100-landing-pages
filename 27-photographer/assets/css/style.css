@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: #469fdf;
+  color: #f2622c;
   text-decoration: none;
 }
 
@@ -106,15 +106,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+
+
 #header {
   transition: all 0.5s;
   z-index: 997;
   padding: 25px 0;
   position: absolute;
 }
+.header-scrolled #header {position: fixed;background: #000;}
+
+
 #header a i {
     font-size: 18px;
     color: #000;
@@ -125,6 +133,8 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-scrolled {
   border-color: #fff;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  background: #000;
+  position: fixed;
 }
 
 #header .logo {
@@ -149,6 +159,16 @@ h1, h2, h3, h4, h5, h6 {
   #header .logo {
     font-size: 28px;
   }
+
+  .header-scrolled #header {
+    position: fixed;
+    background: #000;
+    padding: 40px 0 0;
+}
+.header-scrolled .mobile-nav-toggle {
+    top: 68px;
+    }
+
 }
 
 /*--------------------------------------------------------------
@@ -300,7 +320,7 @@ opacity: 0;}
 .mobile-nav-toggle {
   position: fixed;
   right: 35px;
-  top: 18px;
+  top: 38px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -319,9 +339,12 @@ opacity: 0;}
 .mobile-nav {
   position: fixed;
   top: 55px;
-  right: 15px;
+  right: 0;
   bottom: 15px;
-  left: 15px;
+  left: 0;
+  width: 80%;
+  margin: 0 auto;
+  height: 310px;
   z-index: 9999;
   overflow-y: auto;
   background: #fff;
@@ -583,13 +606,14 @@ opacity: 0;}
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    background-attachment: fixed;overflow-x: hidden;
   }
 }
 
 @media (max-width: 992px), (max-height: 500) {
   #hero {
     height: 100vh;
+    overflow-x: hidden;
   }
   #hero h1 {
     font-size: 28px;
@@ -872,6 +896,12 @@ section {
     flex-grow: 1;
     max-width: 100;
 }
+
+.header-scrolled .fixed-top {
+    height: 150px;
+    padding: 70px 0 0;
+}
+
 
 }
 
