@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #469fdf;
+  color: #3ab364;
   text-decoration: none;
 }
 
@@ -114,14 +114,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px 0;
   position: absolute;
 }
-#header a i {font-size: 18px;
+#header a i {
+    font-size: 18px;
     color: #fff;
-    margin: 0 11px;}
-    #header a:hover {color: #3ab364;}
+    margin: 0 5px;
+    }
+    #header a:hover {color: #f7f7f7;}
 
 #header.header-scrolled {
   border-color: #fff;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  background: #000;
+  position: fixed;
 }
 
 #header .logo {
@@ -165,16 +169,22 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-  padding: 14px 0 14px 28px;
+  padding: 0 0 0 18px;
+}
+.nav-menu > ul > li.soc a {display: inline-block; }
+
+.nav-menu > ul > li.last {
+    margin: -10px 0 0;
 }
 
 .nav-menu a {
   display: block;
   position: relative;
-  color: #124265;
+  color: #fff;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -274,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .get-started-btn:hover {
-  background: #2079b8;
+  background: #0da241;
   color: #fff;
 }
 
@@ -283,6 +293,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 48px 0 0;
     padding: 5px 18px 6px 18px;
     border-radius: 3px;
+    text-align: center;
   }
 }
 
@@ -290,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 18px;
+  top: 38px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -300,10 +311,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  color: #fff;
 }
 
 .mobile-nav-toggle i {
-  color: #124265;
+  color: #fff;
 }
 
 .mobile-nav {
@@ -319,7 +331,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   border-radius: 10px;
-  padding: 10px 0;
+  padding: 10px 20px;
+  height: 530px;
 }
 
 .mobile-nav * {
@@ -331,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #124265;
+  color: #333;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
@@ -2290,11 +2303,11 @@ ul#tabs-nav li.active {
 }
 
 #hero .topform {
-    padding: 25px;
+    padding: 25px 25px 35px;
     margin-top: 30px;
 }
 section {
-    padding: 40px 0;
+    padding: 80px 0;
 }
 .tab-content {
     padding: 0 0 0 0px;
@@ -2314,4 +2327,12 @@ section {
 #fold1 .icon-box {
     margin: 20px 0 0px;
 }
+
+.blog-posts .member .member-info {
+    padding: 25px 10px;}
+
+.mobile-nav > ul > li.soc {text-align: center;padding: 20px 0;}
+.mobile-nav > ul > li.soc a {text-align: center;display: inline-block;font-size: 24px;}
+
+
 }
