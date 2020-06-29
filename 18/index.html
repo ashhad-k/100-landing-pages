@@ -21,23 +21,23 @@
 		<div class="row">
 			<div class="col-md-12">
 				<nav class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand" href="javascript:;"><img src="assets/images/logo.png" alt="logo" /></a>
+					<a class="navbar-brand" href="#banner_sec"><img src="assets/images/logo.png" alt="logo" /></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 						<ul class="navbar-nav justify-content-end align-items-center">
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:;">Home</a>
+								<a class="nav-link" href="#banner_sec">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:;">events</a>
+								<a class="nav-link" href="#event_sec">events</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:;">schedule</a>
+								<a class="nav-link" href="#schedule_sec">schedule</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:;">News</a>
+								<a class="nav-link" href="#news_sec">News</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="javascript:;">Contact</a>
@@ -55,7 +55,7 @@
 
 
 
-<section class="main-banner-sec">
+<section class="main-banner-sec" id="banner_sec">
 	<div class="banner_slider">
 		<div class="item" style="background-image: url(assets/images/banner_img.png);">
 			<div class="container h-100">
@@ -176,7 +176,7 @@
 </section>
 
 
-<section class="main_event_sec">
+<section class="main_event_sec" id="event_sec">
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-md-6 col-sm-12 align-self-center">
@@ -210,7 +210,7 @@
 </section>
 
 
-<section class="main_confrences_sec">
+<section class="main_confrences_sec" id="schedule_sec">
 	<div class="container h-100">
 		<div class="row h-100">
 			<div class="col-md-12 text-center">
@@ -437,7 +437,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row align-items-center justify-content-center mt-5">
+		<div class="row align-items-center justify-content-center mt-5 logs_slides">
 			<div class="col-md-3 col-sm-12 align-self-center text-center">
 				<div class="official_log_box">
 					<img src="assets/images/official_logo1.png" alt="*">
@@ -490,7 +490,7 @@ Start Up Here.</h2>
 </section>
 
 
-<section class="main_news_latter_sec">
+<section class="main_news_latter_sec" id="news_sec">
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-md-12 text-center">
@@ -580,7 +580,9 @@ Start Up Here.</h2>
 		</div>
 	</div>
 </footer>
-
+<div id="scroll-top" class="scroll_Top">
+	<span><a href=""><i class="fa fa-arrow-up" aria-hidden="true"></i></a></span>
+</div>
 
 
 
@@ -670,6 +672,41 @@ $(".testi_slide").slick({
     }
 ]
     
+    }); 
+
+
+
+//*****************************
+    // Responsive Slider
+    //*****************************
+    var respsliders = {
+      1: {slider : '.logs_slides'}
+    };
+
+    //*****************************
+    // Function for Responsive Slider 767
+    //*****************************
+
+    $.each(respsliders, function() {
+
+        $(this.slider).slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            settings: "unslick",
+            responsive: [
+                {
+                  breakpoint: 2000,
+                  settings: "unslick"
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        unslick: true
+                    }
+                }
+            ]
+        });
     });    
 </script>
 
@@ -695,6 +732,77 @@ $(window).scroll(function(){
 //=========== HEADER SCROLL FUNCTION END
 </script>
 
+
+
+<script type="text/javascript">
+	// BY KAREN GRIGORYAN
+
+$(document).ready(function() {
+  /******************************
+      BOTTOM SCROLL TOP BUTTON
+   ******************************/
+
+  // declare variable
+  var scrollTop = $(".scroll_Top");
+
+  $(window).scroll(function() {
+    // declare variable
+    var topPos = $(this).scrollTop();
+
+    // if user scrolls down - show scroll to top button
+    if (topPos > 100) {
+      $(scrollTop).css("opacity", "1");
+
+    } else {
+      $(scrollTop).css("opacity", "0");
+    }
+
+  }); // scroll END
+
+  //Click event to scroll to top
+  $(scrollTop).click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+
+  }); // click() scroll top EMD
+
+  /*************************************
+    LEFT MENU SMOOTH SCROLL ANIMATION
+   *************************************/
+  // declare variable
+  var h1 = $("#h1").position();
+  var h2 = $("#h2").position();
+  var h3 = $("#h3").position();
+
+  $('.link1').click(function() {
+    $('html, body').animate({
+      scrollTop: h1.top
+    }, 500);
+    return false;
+
+  }); // left menu link2 click() scroll END
+
+  $('.link2').click(function() {
+    $('html, body').animate({
+      scrollTop: h2.top
+    }, 500);
+    return false;
+
+  }); // left menu link2 click() scroll END
+
+  $('.link3').click(function() {
+    $('html, body').animate({
+      scrollTop: h3.top
+    }, 500);
+    return false;
+
+  }); // left menu link3 click() scroll END
+
+}); // ready() END
+
+</script>
 
 
 <script>

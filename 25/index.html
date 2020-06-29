@@ -21,6 +21,9 @@
 			<div class="col-md-12">
 				<nav class="navbar navbar-expand-lg navbar-light">
 					<a class="navbar-brand" href="javascript:;"><img src="assets/images/logo.png" alt="logo"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 						<ul class="navbar-nav justify-content-end align-items-center">
 							<li class="nav-item">
@@ -427,7 +430,9 @@
 		</div>
 	</div>
 </footer>
-
+<div id="scroll-top" class="scroll_Top">
+	<span><a href=""><i class="fa fa-arrow-up" aria-hidden="true"></i></a></span>
+</div>
 
 
 
@@ -476,6 +481,99 @@
 </script>
 
 
+
+
+<script type="text/javascript">
+
+
+//=========== HEADER SCROLL FUNCTION STARTS
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 200) {
+        $('.main-header').addClass('fixed-header');
+        // $('.tphead').slideUp(100);
+        $('.tphead div').addClass('visible-title');
+    }
+    else {
+        $('.main-header').removeClass('fixed-header');
+        // $('.tphead').slideDown(100);
+        $('.tphead div').removeClass('visible-title');
+    }
+});
+
+//=========== HEADER SCROLL FUNCTION END
+</script>
+
+
+<script type="text/javascript">
+	// BY KAREN GRIGORYAN
+
+$(document).ready(function() {
+  /******************************
+      BOTTOM SCROLL TOP BUTTON
+   ******************************/
+
+  // declare variable
+  var scrollTop = $(".scroll_Top");
+
+  $(window).scroll(function() {
+    // declare variable
+    var topPos = $(this).scrollTop();
+
+    // if user scrolls down - show scroll to top button
+    if (topPos > 100) {
+      $(scrollTop).css("opacity", "1");
+
+    } else {
+      $(scrollTop).css("opacity", "0");
+    }
+
+  }); // scroll END
+
+  //Click event to scroll to top
+  $(scrollTop).click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+
+  }); // click() scroll top EMD
+
+  /*************************************
+    LEFT MENU SMOOTH SCROLL ANIMATION
+   *************************************/
+  // declare variable
+  var h1 = $("#h1").position();
+  var h2 = $("#h2").position();
+  var h3 = $("#h3").position();
+
+  $('.link1').click(function() {
+    $('html, body').animate({
+      scrollTop: h1.top
+    }, 500);
+    return false;
+
+  }); // left menu link2 click() scroll END
+
+  $('.link2').click(function() {
+    $('html, body').animate({
+      scrollTop: h2.top
+    }, 500);
+    return false;
+
+  }); // left menu link2 click() scroll END
+
+  $('.link3').click(function() {
+    $('html, body').animate({
+      scrollTop: h3.top
+    }, 500);
+    return false;
+
+  }); // left menu link3 click() scroll END
+
+}); // ready() END
+
+</script>
 
 
 <script>
