@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 #header:before{content: " "; position: absolute; width: 50%; height: 101%; left: 0; top: 0; background-color: #5d59e5; z-index: -1;}
 #header .container-fluid{padding: 0 40px;}
 /*#header.header-scrolled:before {display: none;}*/
-#header.header-scrolled{box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);}
+#header.header-scrolled{box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08); padding: 20px 0;}
 
 .nav-menu{text-align: right;}
 .nav-menu ul{margin: 0; padding: 0 20px 0 0;}
@@ -138,6 +138,8 @@ h1, h2, h3, h4, h5, h6 {
 .no-pad{padding: 0;}
 .register-btn:hover{background-color: #3a35d6; color: #fff;}
 .nav-menu ul li a:hover{color: #3a35d6;}
+.menu-mobile{display: none;}
+
 
 
 
@@ -149,8 +151,13 @@ h1, h2, h3, h4, h5, h6 {
   .register-btn{width: auto; height: auto; font-size: 15px; padding: 6px 25px 7px; line-height: normal;}
   #header .register-btn{margin: 0 45px 0 0;}
   .mobile-nav ul li{display: inline-block;}
-  .mobile-nav{height: 66px; text-align: center; padding: 5px 0 10px 0;}
+  .mobile-nav{height: 440px; text-align: center; padding: 5px 0 10px 0;}
   .mobile-nav a{font-size: 22px;}
+  .menu-mobile{display: block;}
+  .mobile-nav .menu-mobile li{display: block;}
+  .mobile-nav .menu-mobile li a{display: block; font-size: 14px; text-transform: uppercase;}
+  .mobile-nav a.reg-mob{display: block; color: #fff; font-size: 16px; width: 50%; margin: 15px auto 0;}
+ 
 }
 
 
@@ -306,7 +313,8 @@ img{max-width: 100%;}
   .banner-text ul li{font-size: 16px; font-weight: 300;}
   .banner-text h6{margin: 0 0 6px;}
   .banner-text ul{margin: 0 0 35px;}
- 
+  .main-slider{padding: 165px 0 0 0;}
+  .banner-text{padding: 0 15px 70px; text-align: center;}
 }
 
 
@@ -355,7 +363,7 @@ section {
   margin-bottom: 0;
   font-size: 17px;
   color: #939393;
-  line-height: 26px;
+  line-height: 34px;
   padding: 0 0 45px;
 }
 
@@ -373,14 +381,17 @@ ul.about-img li{list-style: none; display: inline-block; margin: 0 20px 0 0;}
 
 
 @media (max-width: 768px){
-  .about-sec{padding: 80px 0 0 0;}
+  .about-sec{padding: 100px 0 0 0; text-align: center;}
   .about-sec .section-title{padding: 40px 0 0 0;}
   .section-title h3{padding: 20px 0 0 0; margin-bottom: 15px; font-size: 30px;}
-  .section-title p{font-size: 15px; line-height: 22px; padding: 0 0 30px;}
-  ul.about-img li{margin: 0 5px 0 0;}
+  .section-title p{font-size: 14px; line-height: 24px; padding: 0 0 30px;}
+  ul.about-img li{margin: 0 5px 0 0; width: 48%;}
+  ul.about-img li img{width: 100%;}
   ul.about-img li:last-child{margin: 0;}
   .services-list h5{margin: 0 0 8px;}
-
+  .section-title h3::before {right: 0; left: 0; margin: auto;}
+  .reg-desktop{display: none;}
+  .mobile-nav a .reg-mob{display: block;}
 }
 
 
@@ -388,22 +399,32 @@ ul.about-img li{list-style: none; display: inline-block; margin: 0 20px 0 0;}
 # Tours
 --------------------------------------------------------------*/
 
-.tours-sec .section-title{width: 410px; margin: 90px 0 0 auto;}
+.tours-sec .section-title{width: 410px; margin: 0px 0 0 auto;}
 .tours-sec .container-fluid{padding-right: 0;}
 .tours-img{text-align: right;}
 .tours-img ul{padding: 0; margin: 0;}
-.tours-img ul li{display: inline-block;margin: 0 0 0 21px;width: 30%; vertical-align: bottom;}
+.tours-img ul li{display: inline-block;margin: 0 0 0 21px;width: 30%; vertical-align: middle; transition: all 0.4s ease-In-out;}
 .tours-img ul li img{width: 100%;}
 .no-pad-right{padding-right: 0;}
-.tours-img h4{font-size: 20px;font-weight: 500;color: #151f32;text-align: center;text-transform: uppercase;margin: 22px 0 6px;}
-.tours-img p{font-size: 14px; font-weight: 300; color: #8d8d8d; text-align: center;}
+.tours-img h4{font-size: 20px;font-weight: 700;color: #151f32;text-align: center;text-transform: uppercase;margin: 25px 0 6px;}
+.tours-img p{font-size: 14px; font-weight: 300; color: #8d8d8d; text-align: center; margin: 0;}
+.bu-txt{opacity: 0;}
+.tours-img ul li:hover {margin-top: -40px;}
+.tours-img ul li:hover .bu-txt{opacity: 1;}
 
 @media (max-width: 768px){
   .tours-sec .section-title{width: 100%; margin: 60px 0 0 auto;}
-  .tours-sec{padding: 0;}
+  .tours-sec{padding: 50px 0 0 0; text-align: center;}
   .section-title h3 br{display: none;}
   .tours-sec .container-fluid{padding-right: 15px;}
   .tours-img ul li{display: block; margin: 0 0 20px 0; width: 100%;}
+  .bu-txt{opacity: 1;}
+  .tours-img h4{margin: 15px 0 5px;}
+  .tours-img ul li:hover{margin: 0;}
+  .tours-img ul li{margin: 0 0 50px;}
+  .services-sec{text-align: center;}
+  .services-list h5{margin: 10px 0 8px;}
+  .services-sec .section-title{padding: 55px 0 0 0;}
 }
 
 
@@ -418,7 +439,7 @@ ul.about-img li{list-style: none; display: inline-block; margin: 0 20px 0 0;}
 .services-sec .section-title{padding: 0 0 0 30px;} 
 
 @media (max-width: 768px){
-  .services-sec .section-title{padding: 40px 0 0 0;}
+  .services-sec .section-title{padding: 70px 0 0 0;}
   .services-sec{padding: 50px 0 0 0;}
 }
 
@@ -456,14 +477,16 @@ ul.about-img li{list-style: none; display: inline-block; margin: 0 20px 0 0;}
 
 @media (max-width: 768px){
   .news-side{width: 100%;}
-  .news-blogs-sec{padding: 0;}
+  .news-blogs-sec{padding: 0 0 70px;}
   .news-side h2{font-size: 100px;}
   .news-side h2 span{top: -70px; left: -10px;}
-  .blogs-side{padding: 70px 0 0 0;}
-  .blogs-side ul li{display: block; text-align: center;}
-  .blogs-side ul li a{width: 100%; margin: 0; padding: 17px 0 15px 0; font-size: 15px; line-height: 22px;}
-  .blogs-side ul li img{display: block; margin: auto;}
+  .blogs-side{padding: 140px 0 0 0;}
+  .blogs-side ul li{display: block;}
+  .blogs-side ul li a{ margin: 0 0 0 15px; padding: 0px 0 10px 0; font-size: 15px; line-height: 22px; vertical-align: middle;}
+  .blogs-side ul li img{/*display: block; margin: auto;*/}
   .blogs-head h4{font-size: 35px;}
+  .news-side ul li{padding: 70px 28px;}
+  .news-side{padding: 70px 0 0px 0;}
 }
 
 
@@ -488,7 +511,7 @@ ul.about-img li{list-style: none; display: inline-block; margin: 0 20px 0 0;}
 .stories-sec{margin: 35px 0 0 0;}
 .insta-text{padding: 40px 0 0 0;}
 
-ul.insta-likes{width: 229px;height: 54px;background-color: #ed4956;border-radius: 8px;text-align: center;padding: 12px 0;margin: 0;position: absolute;bottom: 60px;left: -20px; opacity: 0; transition: all 0.4s ease-In-out;}
+ul.insta-likes{width: 229px;height: 54px;background-color: #ed4956;border-radius: 8px;text-align: center;padding: 12px 0;margin: 0;position: absolute;bottom: 18px;left: -20px; opacity: 0; transition: all 0.4s ease-In-out;}
 ul.insta-likes:before{content: " ";position: absolute;width: 0;height: 0;border-left: 14px solid transparent;border-right: 14px solid transparent;border-top: 20px solid #ed4956;bottom: -19px;right: 0;left: 0;margin: auto;}
 ul.insta-likes li{display: inline-block;list-style: none;margin: 0 25px 0 0;}
 ul.insta-likes li:last-child{margin: 0;}
@@ -504,9 +527,10 @@ ul.insta-likes li a i{font-size: 18px;margin: 0 3px 0 0;}
   .insta-text p{font-size: 16px; font-weight: 300; margin: 0 0 4px;}
   .insta-text ul{margin: 0 0 25px;}
   .stories-sec ul{margin: 0;}
-  .stories-sec ul li{margin: 0 3% 0 0;}
+  .stories-sec ul li{margin: 0 2.9% 0 0;}
   .stories-sec .blogs-head h4{font-size: 35px; color: #fff;}
   .stories-sec .blogs-head{margin: 0 0 10px;}
+  .insta-mg img{width: 100%;}
 }
 
 
@@ -676,12 +700,13 @@ ul.insta-likes li a i{font-size: 18px;margin: 0 3px 0 0;}
 .destination-sec{padding: 160px 0 80px;}
 
 @media (max-width: 768px){
-  .destination-sec{padding: 50px 0 20px;}
+  .destination-sec{padding: 90px 0 50px;}
   .destination-sec h2{font-size: 28px; margin: 0 0 30px;}
   .no-pad-right{padding-right: 15px;}
   .destination-sec #portfolio-flters li{width: 40%; height: 46px; line-height: 46px; font-size: 16px;}
   .portfolio #portfolio-flters{margin: 0 auto 15px auto;}
   .destination-location h4{font-size: 30px;}
+  .portfolio-wrap img{width: 100%; height: 460px;}
 }
 
 
@@ -698,7 +723,7 @@ ul.insta-likes li a i{font-size: 18px;margin: 0 3px 0 0;}
 
 @media (max-width: 768px){
   .cta-bg{padding: 30px 15px; height: auto; text-align: center;}
-  .cta-bg h3{font-size: 30px; margin: 0 0 10px;}
+  .cta-bg h3{font-size: 28px; margin: 0 0 10px;}
   .cta-bg p{font-size: 14px; }
   .cta-bg p br{display: none;}
   .cta-bg a{margin: 0 auto;}
@@ -718,7 +743,7 @@ footer ul li{display: inline-block; margin: 0 0 0 25px;}
 footer ul li a{color: #151f32;}
 
 @media (max-width: 768px){
-  footer{text-align: center; padding: 30px 0;}
+  footer{text-align: center; padding: 60px 0 40px;}
   footer ul{text-align: center; padding: 12px 0 00 ;}
   footer ul li{margin: 0 0 0 10px;}
   }
