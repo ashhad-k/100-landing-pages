@@ -4,10 +4,8 @@ h1,h2,h3,h4,h4,p{padding: 0;margin: 0;font-family: 'Montserrat', sans-serif;}
 body{font-family: 'Montserrat', sans-serif;}
 a:hover{text-decoration: none;}
 html, body {scroll-behavior: smooth; }
-.main-header {padding: 30px 0 30px 0; position: fixed; width: 100%; z-index: 999; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; }
-.main-header.fixed-header {background-color: #000000b8; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; padding: 15px 0 15px 0; -webkit-box-shadow: 0 2px 20px #01010130; -moz-box-shadow: 0 2px 20px #01010130; -o-box-shadow: 0 2px 20px #01010130; box-shadow: 0 2px 20px #01010130; }
-
-/* TEST */ 
+.main-header {padding: 14px 0 14px 0; position: fixed; width: 100%; z-index: 999; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; }
+.main-header.fixed-header {background-color: #000000b8; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; padding: 14px 0 14px 0; -webkit-box-shadow: 0 2px 20px #01010130; -moz-box-shadow: 0 2px 20px #01010130; -o-box-shadow: 0 2px 20px #01010130; box-shadow: 0 2px 20px #01010130; }
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -190,6 +188,9 @@ html, body {scroll-behavior: smooth; }
 	font-size: 14px;
 	text-align: center;
 }
+
+.mobile-nav a span {padding: 10px 0px;}
+
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
 	color: var(--main-color);
 	;
@@ -258,9 +259,19 @@ button.mobile-nav-toggle.d-lg-none {
     background: #000;
 }
 
-span.icon-facebook2, span.icon-twitter, span.icon-instagram {
+span.icon-facebook2, span.icon-twitter2, span.icon-instagram {
     color: #fff;
     padding: 0px 10px;
+}
+
+span.icon-facebook2:hover, span.icon-twitter2:hover, span.icon-instagram:hover {
+    color: #6adb97;
+    transition: .3s;
+}
+
+.icon-twitter2:before {
+    content: "\ea96";
+
 }
 
 @media (max-width: 768px) {
@@ -556,7 +567,7 @@ margin-top:40px }
 .testi_right_box{padding-top: 40px}
 .testi_left_box h3, .testi_right_box h3 {padding: 10px 0 0px 0; }
 .cta_heading{text-align: center;}
-.main-header.fixed-header{padding: 5px 0;}
+.main-header.fixed-header{padding: 13px 0;}
 
 }
 
