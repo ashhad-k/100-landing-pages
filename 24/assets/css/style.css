@@ -1,3 +1,13 @@
+@font-face {
+  font-family: CeraGR;
+  src: local("CeraGR Regular"),local("CeraGR-Regular"),url(../fonts/GTWalsheimProRegular.woff) format("woff"),url(../fonts/CeraGR-Regular.woff) format("woff"),url(../fonts/CeraGR-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # General
@@ -18,7 +28,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-   font-family: 'Montserrat', sans-serif;
+   font-family: CeraGR;
 }
 
 /*--------------------------------------------------------------
@@ -157,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-nav .menu-mobile li{display: block;}
   .mobile-nav .menu-mobile li a{display: block; font-size: 14px; text-transform: uppercase;}
   .mobile-nav a.reg-mob{display: block; color: #fff; font-size: 16px; width: 50%; margin: 15px auto 0;}
- 
+  #header.header-scrolled{padding: 10px 0;}
 }
 
 
@@ -181,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 18px;
+  top: 12px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -291,12 +301,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-slider{background-color: #5d59e5;padding: 123px 0 0 0;}
 .banner-text{width: 580px; margin: 0 auto;}
-.banner-text h1{font-size: 159px; color: #fff; font-weight: bold; line-height: 150px; }
-.banner-text h4{font-size: 38px; font-weight: 300; color: #fff; margin: 0 0 190px;}
+.banner-text h1{font-size: 159px; color: #fff; font-weight: bold;  font-family: CeraGR;}
+.banner-text h4{font-size: 38px; font-weight: 300; color: #fff; margin: 0 0 160px;}
 img{max-width: 100%;}
 .banner-text h6{font-size: 26px; font-weight: 500; color: #fff; margin: 0 0 15px;}
 .banner-text ul{padding: 0; margin: 0;}
-.banner-text ul li{display: inline-block; list-style: none; padding: 0 30px 0 0; font-size: 20px; font-weight: 300; color: #fff;}
+.banner-text ul li{display: inline-block; list-style: none; padding: 0 30px 0 0; font-size: 20px; font-weight: 300; color: #fff; font-family: CeraGR;}
 .banner-text ul li i{margin: 0 5px 0 0;}
 
 .main-slider .slick-arrow{font-size: 0;position: absolute;left: 38%;background: transparent;border: none;cursor: pointer;z-index: 1;bottom: 21vh; outline: none; border: none;}
@@ -304,6 +314,7 @@ img{max-width: 100%;}
 .main-slider .slick-arrow:hover:before{color: #fff;}
 .main-slider .slick-prev{left: 34%;}
 .main-slider .slick-prev:before{content: "\f053";}
+.main-slider .slick-slide img{width: 100%;}
 
 @media (max-width: 768px){
   .banner-text{width: 100%; padding: 0 15px;}
@@ -315,6 +326,7 @@ img{max-width: 100%;}
   .banner-text ul{margin: 0 0 35px;}
   .main-slider{padding: 165px 0 0 0;}
   .banner-text{padding: 0 15px 70px; text-align: center;}
+
 }
 
 
@@ -353,6 +365,7 @@ section {
   margin-bottom: 25px;
   padding-bottom: 0;
   color: #151f32;
+  line-height: 77px;
   position: relative;
   padding: 35px 0 0 0;
 }
@@ -452,10 +465,10 @@ ul.about-img li{list-style: none; display: inline-block; margin: 0 20px 0 0;}
 .news-side{background: url(../img/map-img.png) no-repeat;width: 556px;height: 628px;background-position: center;padding: 40px 0 0 0;}
 .news-side h5{font-size: 18px; font-weight: bold; color: #ffb502; text-transform: uppercase; text-align: center; margin: 0 0 12px;}
 .news-side h6{font-size: 18px;font-weight: 400;color: #1b1b1b;text-align: center;margin: 0 0 30px;}
-.news-side h2{font-size: 168px; font-weight: bold; text-align: center; color: #151f32;}
+.news-side h2{font-size: 168px; font-weight: bold; text-align: center; color: #151f32; margin: 0 0 17px;}
 .news-side h2 span{font-size: 31px;font-weight: bold;position: relative;top: -110px;left: -40px;}
 .news-side h2 span:before{content: " ";position: absolute;height: 15px;width: 15px;border-radius: 50%;border: 5px solid #151f32;top: 6px;left: -22px;}
-.news-side h4{font-size: 18px;font-weight: 500;color: #1b1b1b;text-transform: uppercase;text-align: center;margin: 0;}
+.news-side h4{font-size: 18px;font-weight: 600;color: #1b1b1b;text-transform: uppercase;text-align: center;margin: 0;}
 .news-side ul{padding: 0;margin: 30px 0 0 0;text-align: center;font-size: 0;}
 .news-side ul li{display: inline-block;padding: 70px 32px;font-size: 20px;font-weight: bold;color: #151f32;position: relative; transition: all 0.4s ease-In-out;}
 .news-side ul li:hover{background-color: #151f32; color: #fff;}
@@ -511,7 +524,7 @@ ul.about-img li{list-style: none; display: inline-block; margin: 0 20px 0 0;}
 .stories-sec{margin: 35px 0 0 0;}
 .insta-text{padding: 40px 0 0 0;}
 
-ul.insta-likes{width: 229px;height: 54px;background-color: #ed4956;border-radius: 8px;text-align: center;padding: 12px 0;margin: 0;position: absolute;bottom: 18px;left: -20px; opacity: 0; transition: all 0.4s ease-In-out;}
+ul.insta-likes{width: 229px;height: 54px;background-color: #ed4956;border-radius: 8px;text-align: center;padding: 12px 0;margin: 0;position: absolute;bottom: 59px;left: -20px; opacity: 0; transition: all 0.4s ease-In-out;}
 ul.insta-likes:before{content: " ";position: absolute;width: 0;height: 0;border-left: 14px solid transparent;border-right: 14px solid transparent;border-top: 20px solid #ed4956;bottom: -19px;right: 0;left: 0;margin: auto;}
 ul.insta-likes li{display: inline-block;list-style: none;margin: 0 25px 0 0;}
 ul.insta-likes li:last-child{margin: 0;}
@@ -690,7 +703,7 @@ ul.insta-likes li a i{font-size: 18px;margin: 0 3px 0 0;}
 
 
 .destination-sec h2{font-size: 71px; font-weight: bold; text-align: center; color: #151f32; margin: 0 0 40px;}
-.destination-sec #portfolio-flters li{width: 214px; height: 56px; line-height: 56px; text-align: center; border-radius: 30px; text-transform: uppercase; font-size: 20px; font-weight: normal; color: #8f8f8f; padding: 0;}
+.destination-sec #portfolio-flters li{width: 214px; height: 56px; line-height: 56px; text-align: center; border-radius: 30px; text-transform: uppercase; font-size: 20px; font-weight: normal; color: #8f8f8f; padding: 0; font-family: CeraGR;}
 .portfolio #portfolio-flters li.filter-active{background-color: #5d59e5; color: #fff;}
 .portfolio #portfolio-flters li:hover{background-color: #151f32; color: #fff;}
 
