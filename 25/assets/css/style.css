@@ -308,6 +308,11 @@ span.icon-facebook2:hover, span.icon-twitter2:hover, span.icon-instagram:hover {
 
 }
 
+@media screen and (max-width:812px) and (orientation: landscape) {
+	.top-rhs {display:none;}
+}
+
+
 @media (max-width: 768px) {
 	.top-rhs2 {
 	display: block;
