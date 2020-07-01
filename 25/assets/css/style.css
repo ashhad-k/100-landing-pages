@@ -536,19 +536,19 @@ color: #eb334f;}
 .main_good_design_sec{padding: 150px 0 100px 0;}
 .good_design_cont {padding-left: 60px; }
 .good_design_img img{width: 100%;}
-.good_design_cont h2 span{display: block;color: #eb334f;font-size: 20px;font-weight: 500;text-transform: uppercase;padding-bottom: 25px;}
-.good_design_cont h2{font-size: 66px;font-weight: 500;color: #000000;line-height: 1;}
-.good_design_cont p{font-size: 16px;font-weight:400;color: #000000;line-height: 1.8;padding: 50px 0 85px 0;}
-.good_design_cont a{height: auto; width: auto; font-weight: 400; padding: 16px 60px; }
+.good_design_cont h2 span{display: block;color: #eb334f;font-size: 20px;font-weight: 400;text-transform: uppercase;padding-bottom: 25px;}
+.good_design_cont h2{font-size: 66px;font-weight: 400;color: #000000;line-height: 1;}
+.good_design_cont p{font-size: 16px;font-weight:300;color: #000000;line-height: 1.8;padding: 50px 0 85px 0;}
+.good_design_cont a{height: auto; width: auto; font-weight: 300; padding: 16px 60px; }
 
 
 
 .main_our_services_sec{background-color: #f8f8f8;padding: 150px 0 40px 0;}
 .services_box{min-height: 555px;}
 .servic_img img{width: 100%;}
-.service_cont h2{margin: 60px 0 40px 0;position: relative;font-size: 36px;font-weight: 500;color: #000000;padding-left: 30px;line-height: 1;}
+.service_cont h2{margin: 60px 0 40px 0;position: relative;font-size: 36px;font-weight: 400;color: #000000;padding-left: 30px;line-height: 1;}
 .service_cont h2:before{content: ""; position: absolute; left: 0; top: 5px; height: 28px; width: 5px; background-color: #eb334f; }
-.service_cont p{font-size: 16px;font-weight: 400;color: #000000;padding-left: 30px;line-height: 1.6;}
+.service_cont p{font-size: 16px;font-weight: 300;color: #000000;padding-left: 30px;line-height: 1.6;}
 
 
 .main_testimonials_sec{position: relative; height: 800px; width: 100%; display: block; padding: 100px 0 100px 0; }
@@ -563,11 +563,11 @@ color: #eb334f;}
 .play .video-btn:hover::after {border-left: 15px solid #eb334f; transform: scale(20); }
 .testi_inner {padding: 0 60px 0px 0;}
 .testi_inner img{}
-.testi_inner p{color: #fff;font-size: 22px;font-style: italic;font-weight: 400;line-height: 36px;padding: 50px 0 85px 0;    font-family: 'Montserrat', sans-serif;}
+.testi_inner p{color: #fff;font-size: 22px;font-style: italic;font-weight: 300;line-height: 36px;padding: 50px 0 85px 0;    font-family: 'Montserrat', sans-serif;}
 .main_prson{font-size: 0;}
 .person_img{display: inline-block;width: 20%;vertical-align: middle;}
 .person_cont{display: inline-block;width: 20%;vertical-align: middle;     margin-left: 20px;}
-.person_cont h3{font-size: 18px;color: #fff;font-weight: 500;    font-family: 'Montserrat', sans-serif;}
+.person_cont h3{font-size: 18px;color: #fff;font-weight: 400;    font-family: 'Montserrat', sans-serif;}
 .person_cont span{font-size: 14px;color: #fff;font-weight: 200;     font-family: 'Montserrat', sans-serif;}
 
 .main_pricing_sec{padding: 150px 0 150px 0;text-align: center;}
@@ -579,9 +579,9 @@ color: #eb334f;}
 .prc_rate h3{font-size: 20px;font-weight: 700;color: #000000;text-transform: uppercase;font-family: 'Montserrat', sans-serif;}
 .prc_rate p{font-size: 72px;color: #eb334f;font-weight: bold;padding: 28px 0 10px 0;}
 .black {color:#1f0e36 !important;}
-.prc_rate span{font-size: 14px;color: #b1b0b0;font-weight: 500;}
+.prc_rate span{font-size: 14px;color: #b1b0b0;font-weight: 400;}
 .pri_details{padding: 35px 20px 25px 20px;}
-.pri_details ul li{display: block; font-size: 14px; color: #939393; font-weight: 400; line-height: 2.6; }
+.pri_details ul li{display: block; font-size: 14px; color: #939393; font-weight: 300; line-height: 2.6; }
 .pri_details ul li span{font-size: 14px; color: #222222; font-weight: 600; }
 .pri_details a{border-radius: 0px;width: 100%;height: auto;padding:14px 15px;margin-top: 15px;text-transform: uppercase; font-size: 14px; font-weight:600; }
 .recmed a.theme_btn{background-color: #1f0e36;text-transform: uppercase; font-size: 14px; font-weight:600;}
@@ -601,7 +601,7 @@ color: #eb334f;}
 .cta_cont h2{color: #fff;    font-size: 45px;font-weight: 600; font-family: 'Montserrat', sans-serif;}
 /*.cta_cont h2 span{display: block;} */
 .cta_btn{text-align: right;}
-.cta_btn a {width: auto; height: auto; padding: 10px 40px; font-weight: 400; }
+.cta_btn a {width: auto; height: auto; padding: 10px 40px; font-weight: 300; }
 
 
 .main-footer {height: 190px; padding: 60px 0 60px 0; }

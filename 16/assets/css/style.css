@@ -347,11 +347,11 @@ a.theme_btn:hover { background: #5cb781;}
 .inp_btn_field input:hover { background-color: #5257b7;}
 .main_features_sec{padding: 120px 0 150px 0; }
 .main_heading{color: #102039; font-size: 42px; font-weight: 600; margin: 0; padding: 0; }
-.main_para{color: #7a7f83; font-size: 17px; font-weight: 400; margin: 0; padding: 40px 0 100px 0; line-height: 2; }
+.main_para{color: #7a7f83; font-size: 17px; font-weight: 300; margin: 0; padding: 40px 0 100px 0; line-height: 2; }
 .main_para span{display: block;}
 .feature_box{background-color: #fff; border: 1px solid #f2f4fb; border-radius: 6px; padding: 40px 31px; min-height: 450px; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; }
 .feature_box h3{font-size: 26px; color: #102039; margin: 0; padding: 0; font-weight: 600; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; }
-.feature_box p {font-size: 14px; color: #878c8f; margin: 0px 0 42px 0; padding: 35px 0 42px 0; font-weight: 400; line-height: 2; }
+.feature_box p {font-size: 14px; color: #878c8f; margin: 0px 0 42px 0; padding: 35px 0 42px 0; font-weight: 300; line-height: 2; }
 .feature_box span {font-size: 70px; color: #636cdd; background-color: #f2f4fb; height: 185px; width: 185px; padding: 57px 57px; border-radius: 100%; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms;}
 .feature_box:hover{-webkit-box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08); -o-box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08); -moz-box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08); box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08); -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; border-color: #fff; }
 .feature_box:hover h3{color: #636cdd; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; }
@@ -361,15 +361,15 @@ a.theme_btn:hover { background: #5cb781;}
 .counter-sec .mcounters li {position: relative; display: inline-block; width: 18%; border-radius: 6px; color: #fff; min-height: 240px; text-align: center; border: 1px solid #797fdd; padding: 40px 24px 40px 24px; }
 .counter-sec .mcounters li:hover{border-color: #24e09b; }
 .counter-sec .mcounters li h4 {font-weight: 600; color: #fff; font-size: 38px; }
-.counter-sec .mcounters li p {color: #fff; font-weight: 400; margin: 15px 0 20px; font-size: 16px; }
+.counter-sec .mcounters li p {color: #fff; font-weight: 300; margin: 15px 0 20px; font-size: 16px; }
 .counter-sec .mcounters li span{color: #24e09b; font-size: 50px; }
 .strt_cta h2{font-size: 40px; color: #fff; margin: 0; padding: 0; line-height: 1.4; font-weight: 600; }
 .strt_cta h2 span{display: block;}
 .main_counter_sec .justify-content-between{margin-top: 90px;}
 .main-team_sec{padding: 110px 0 0px 0;position: relative;}
 .team_box{}
-.team_box h3{font-size: 27px; color: #102039; margin: 0; padding: 35px 0 20px 0; font-weight: 500; }
-.team_box p{font-size: 14px; margin: 0; padding: 0; font-weight:400; }
+.team_box h3{font-size: 27px; color: #102039; margin: 0; padding: 35px 0 20px 0; font-weight: 400; }
+.team_box p{font-size: 14px; margin: 0; padding: 0; font-weight:300; }
 .blue{color: #5f65d5;}
 .green{color: #24e09b;}
 .video_img{margin: 100px 0 0 0;z-index: 9;position: relative;}
@@ -386,11 +386,11 @@ a.theme_btn:hover { background: #5cb781;}
 .clients_heading {padding: 320px 0 0 0; }
 .main_faq_sec{ background-repeat: no-repeat; background-size: cover; background-position: center center; width: 100%; height: 650px; position: relative; padding: 80px 0 80px 0; }
 .faq_cont h2{font-size: 50px; color: #fff; font-weight: 600; margin: 0; padding: 0; line-height:1.2; }
-.faq_cont p {font-size: 14px; color: #fff; font-weight: 400; margin: 0; padding: 40px 0 50px 0; line-height: 2; }
+.faq_cont p {font-size: 14px; color: #fff; font-weight: 300; margin: 0; padding: 40px 0 50px 0; line-height: 2; }
 .main_faq_sec .theme_btn {width: 240px;}
 .faq .faq-list ul {padding: 0; list-style: none; }
 .faq .faq-list li {padding: 20px; background: transparent; border-radius: 6px; position: relative; border: 1px solid #7c82e1; margin-bottom: 15px; }
-.faq .faq-list li p{font-size: 14px;color: #fff;font-weight: 400;margin-top: 25px;line-height: 30px;}
+.faq .faq-list li p{font-size: 14px;color: #fff;font-weight: 300;margin-top: 25px;line-height: 30px;}
 .faq .faq-list a {display: block; position: relative; font-size: 18px; line-height: 24px; font-weight: 600; padding: 0px; outline: none; color: #fff; }
 
 .faq .faq-list a.collapsed .icon-show {display: inline-block; }
@@ -415,9 +415,9 @@ a.theme_btn:hover { background: #5cb781;}
 .ftr_social ul li a {font-size: 14px; color: #fff; border: 2px solid #7c8592; padding: 10px 12px; border-radius: 50%; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; }
 .ftr_social ul li a:hover{background-color: #24e09b; border-color: #24e09b; -webkit-transition: all 700ms; -o-transition: all 700ms; -moz-transition: all 700ms; transition: all 700ms; }
 .testimonials_wrapper{min-height: 425px;background-color: #fff;padding: 70px;-webkit-box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08);-o-box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08);-moz-box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08);box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08);}
-.testi_left_box p, .testi_right_box p{font-size: 15.5px; color: #7a7f83; font-weight: 500; padding: 0 0 40px 0; line-height: 2; }
+.testi_left_box p, .testi_right_box p{font-size: 15.5px; color: #7a7f83; font-weight: 400; padding: 0 0 40px 0; line-height: 2; }
 .testi_left_box h3, .testi_right_box h3{font-size: 24px; font-weight: 600; color: #102039; padding: 0 0 10px 0; margin: 0; }
-.testi_left_box span, .testi_right_box span{font-size: 14px;font-weight: 400;}
+.testi_left_box span, .testi_right_box span{font-size: 14px;font-weight: 300;}
 .testi_left_box{position: relative;}
 .testi_left_box:after{content: ""; position: absolute; right: -100px; top: 0; width: 1px; height: 215px; background-color: #e3e6f0; }
 .testimonials-slider .slick-prev {position: absolute; display: block; height: 45px; width: 45px; line-height: 0px; font-size: 14px; cursor: pointer; background: #6b75e3; color: transparent; top: 300px; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); padding: 0; border: none; outline: none; text-align: center; padding: 15px 15px; border-radius: 25px 0px 0px 25px; }
