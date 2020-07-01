@@ -376,7 +376,7 @@ span.icon-facebook2:hover, span.icon-twitter2:hover, span.icon-instagram:hover {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(36, 135, 206, 0.6);
+      background: rgba(230, 50, 78, 0.68);
   position: absolute;
   left: 30px;
   right: 30px;

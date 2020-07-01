@@ -6,6 +6,9 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<title>16 - Software</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+
 	<link rel="stylesheet" href="http://statics.loyicadev.com/100-lp/16/assets/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://statics.loyicadev.com/100-lp/16/assets/vendor/slick_slider/css/style.css">
 	<link href="http://statics.loyicadev.com/100-lp/16/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -652,7 +655,7 @@ jQuery(function ($) {
   // custom formatting example
   $('.count-number').data('countToOptions', {
 	formatter: function (value, options) {
-	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, '');
 	}
   });
   
