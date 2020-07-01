@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   white-space: nowrap;
   padding: 14px 10px;
+  margin-top: 5px;
 }
 .nav-menu > ul > li.soc {}
 .nav-menu > ul > li.soc a {
@@ -191,7 +192,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat';
+  font-weight: 500;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -276,6 +278,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media only screen and (max-width: 1024px) {.nav-menu a { font-size: 12px;}}
+
+@media only screen and (max-width: 768px) {nav.nav-menu {display: none;}}
+
+@media screen and (max-width:812px) and (orientation: landscape) {nav.nav-menu {display: none;} }
+
+@media screen and (max-width:767px){nav.nav-menu {display: none;}}
+
+
+
+
+
 /* Get Startet Button */
 .get-started-btn {
   margin-left: 25px;
@@ -308,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 18px;
+  top: 27px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -339,6 +353,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   padding: 10px 0;
   height: 500px;
+  text-align:center;
 }
 
 .mobile-nav * {
@@ -419,7 +434,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 700px;
   position: relative;
-  background: url("../img/banner.jpg");
   background-size: cover;
   position: relative;
   background-position: 50%;
@@ -486,6 +500,10 @@ h1, h2, h3, h4, h5, h6 {
     /* display: inline-block; */
     }
     #hero .topform .form-group.half.first {/* margin-right: 10px; */}
+	#hero .topform .form-control::placeholder {
+    color: #fff;
+    font-size: 12px;
+}
 #hero article {
     padding: 0;
 }
@@ -578,7 +596,17 @@ h1, h2, h3, h4, h5, h6 {
 #hero .icon-box:hover .title a {
   color: #f2622c;
 }
+a.banner-btn {
 
+    color: #000 !important;
+    background: #fff;
+    padding: 12px 40px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -604,6 +632,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
 }
 }
+img.arrowdown {
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -627,6 +660,11 @@ section {
     padding: 80px 0;
     text-align: center;
 }
+}
+
+@media screen and (max-width: 767px) {
+section h2 {
+font-size: 26px;}
 
 }
 /*--------------------------------------------------------------
@@ -636,10 +674,17 @@ section {
 
 
 #howWeAre {position: relative; }
-#howWeAre:before {content: '';background-image: url(../img/first.png);width: 190px;height: 190px;display: block;position: absolute;left: -50px;opacity: 0.5;top: 40px;}
+#howWeAre p {font-family: "Open Sans", sans-serif;}
+#howWeAre:before {content: '';width: 190px;height: 190px;display: block;position: absolute;left: -50px;opacity: 0.5;top: 40px;}
 #howWeAre figure {position: relative;float: right;}
 #howWeAre figure img {position: relative;z-index: 2;}
-#howWeAre figure:before {content: '';z-index: 1;background-image: url(../img/first.png);width: 190px;height: 190px;display: block;position: absolute;right: -100px;opacity: 0.5;bottom: -80px;}
+#howWeAre figure:before {content: '';z-index: 1;width: 190px;height: 190px;display: block;position: absolute;right: -100px;opacity: 0.5;bottom: -80px;}
+
+
+
+@media screen and (max-width:1024px){#howWeAre figure:before { right: -40px;}}
+
+@media screen and (max-width:812px) and (orientation: landscape) {#howWeAre figure:before { right: -40px !important;}}
 
 
 
@@ -647,7 +692,7 @@ section {
 #howWeAre figure:before {
     right: 0;}
 
-
+#howWeAre figure {float: none;}
 
 
 }
@@ -664,23 +709,27 @@ section {
 --------------------------------------------------------------*/
 
 #whatwedo {position: relative;}
-#whatwedo:after {content: '';background-image: url(../img/after.png);width: 996px;height: 600px;display: block;position: absolute;opacity: 1;bottom: -260px;right: 0;z-index: 1;}
+#whatwedo:after {content: '';width: 996px;height: 600px;display: block;position: absolute;opacity: 1;bottom: -260px;right: 0;z-index: 1;}
 #whatwedo .zindx {position: relative;z-index: 2;}
 .whatwe {background: #f7f8f8; }
 
 .whatwe h2 {text-align: center;margin: 0 0 60px;}
 .whatwe h2:before {margin: 0 auto 20px;}
 .whatwe .box {position: relative;width: 100%;}
-.whatwe .box img {max-width: 100%; }
+.whatwe .box img {max-width: 100%;    margin: 0 auto; }
 .whatwe .box p {font-size: 26px; font-weight: bold; text-align: center; color: #fff; position: absolute; top: 50%; transform: translate(-50%, -50%); left: 50%; width: 100%; }
-.whatwe .box i {background-image: url(../img/arrow.png);width: 39px;height: 11px;display: block;position: absolute;bottom: 80px;margin: 0 auto;left: 0;right: 0;}
+.whatwe .box i {width: 39px;height: 11px;display: block;position: absolute;bottom: 80px;margin: 0 auto;left: 0;right: 0;}
 
 
-.whatwe .slick-prev {background-image: url(../img/prev.png);width:50px;height: 50px;left: -60px;}
-.whatwe .slick-next {background-image: url(../img/next.png);width:50px;height: 50px;right: auto;left: -60px;top: 190px;}
+.whatwe .slick-prev {width:50px;height: 50px;left: -60px;}
+.whatwe .slick-next {width:50px;height: 50px;right: auto;left: -60px;top: 190px;}
 
 @media screen and (max-width: 768px) {
 #whatwedo:after {display: none;}
+#whatwedo .slick-dots {display:none !Important;}
+.whatwe .slick-prev {display:none !Important;}
+.whatwe .slick-next{display:none !Important;}
+.whatwe .box p { font-size: 20px; }
 }
 
 
@@ -695,9 +744,9 @@ section {
 --------------------------------------------------------------*/
 
 #OURATTORNEYS {padding: 350px 0 100px; }
-.ourattorneys {background-image: url(../img/bg3.jpg);background-repeat: no-repeat;background-position: 50%;background-size: cover;}
+.ourattorneys {background-repeat: no-repeat;background-position: 50%;background-size: cover;}
 .ourattorneys h2 {color: #fff;margin: 80px 0 20px;}
-.ourattorneys p {color: #fff;}
+.ourattorneys p {color: #fff;    margin-top: 30px;}
 .ourattorneys .box {position: relative;width: 100%;}
 .ourattorneys .box img {max-width: 100%; }
 .ourattorneys .box p {font-size: 24px;font-weight: bold;text-align: left;color: #fff;position: absolute;left: 0;width: 100%;bottom: 0;padding: 20px 20px;line-height: 34px;}
@@ -729,7 +778,7 @@ section {
 --------------------------------------------------------------*/
 
 
-.cta {background-image: url(../img/cta.jpg);background-repeat: no-repeat;background-position: 50%;background-size: cover;height: 700px;width: 100%;display: block;background-attachment: fixed;}
+.cta {background-repeat: no-repeat;background-position: 50%;background-size: cover;height: 700px;width: 100%;display: block;background-attachment: fixed;}
 .cta h2 {color: #fff;margin: 80px 0 20px;font-size: 80px;text-transform: uppercase;}
 
 @media screen and (max-width: 768px) {
@@ -738,7 +787,7 @@ section {
     .cta h2 {
     color: #fff;
     margin: 0;
-    font-size: 50px;
+    font-size: 30px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -748,6 +797,12 @@ section {
 }
 
 
+}
+
+img.arrowdown2 {
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
 }
 
 
@@ -761,7 +816,7 @@ section {
 .WeFight h2:before {margin: 0 auto 20px;}
 .WeFight h3 {font-size: 20px; font-weight: 600; text-transform: uppercase; margin: 18px 0; }
 .WeFight p {}
-.WeFight a {font-weight: 600; text-transform: uppercase; margin: 20px 0 2px; display: inline-block; }
+.WeFight a {font-weight: 600; text-transform: uppercase; margin: 20px 0 2px; display: inline-block;    margin-bottom: 50px; }
 .WeFight img {}
 
 @media screen and (max-width: 768px) {
@@ -780,7 +835,7 @@ section h2:before {
 /*--------------------------------------------------------------
 # Sections WeFight
 --------------------------------------------------------------*/
-
+img.background {position: absolute; left: -130px;}
 
 /*--------------------------------------------------------------
 # Sections newsevents
@@ -789,10 +844,10 @@ section h2:before {
 .newsevents {background: #f8f8f7; }
 .newsevents h2 {text-align: center;margin: 0 0 40px;text-transform: uppercase;}
 .newsevents h2:before {margin: 0 auto 20px;}
-.newsevents .box {border-bottom: solid 1px #c1c0c0;padding: 0px 0 20px;margin: 0 0 20px;}
-.newsevents h3 {font-size: 27px;font-weight: 600;margin: 18px 0;line-height: 38px;}
-.newsevents p {color: #909093; }
-.newsevents a  {background-image: url(../img/arrow-org.png);width: 39px;height: 11px;display: block;margin: 20px 0;}
+.newsevents .box {border-bottom: solid 1px #c1c0c0;margin: 10px 32px 10px 10px;}
+.newsevents h3 {font-size: 24px;font-weight: 600;margin: 18px 0;line-height: 38px;color: #000; }
+.newsevents p {color: #909093; font-family: "Open Sans", sans-serif; }
+.newsevents a  {width: 39px;height: 11px;display: block;margin: 20px 0;}
 
 
 /*--------------------------------------------------------------
@@ -806,9 +861,10 @@ section h2:before {
 --------------------------------------------------------------*/
 .address {background: #000000;}
 .address .box {border: solid 1px #ffffff;padding: 50px;}
-.address h3 {font-size: 24px;font-weight: 600;margin: 0 0 10px;line-height: 38px;color: #fff;}
+.address h3 {font-size: 24px;margin: 0 0 10px;line-height: 38px;color: #fff;font-weight: 400;}
 .address p {color: #fff;font-size: 24px;font-weight: bold;}
-.address a  {display: inline-block;margin: 20px 0 30px;color: #fff;font-size: 24px;}
+.address a  {display: inline-block;margin: 20px 0 30px;color: #fff;font-size: 24px; font-weight: 400;
+    text-decoration: underline;}
 .address span {color: #e7682d;font-size: 14px;}
 /*--------------------------------------------------------------
 # Sections address
@@ -820,10 +876,11 @@ section h2:before {
 # Sections contact
 --------------------------------------------------------------*/
 
-.contact {background: #000000;padding: 0px 0 100px;}
+.contact {padding: 100px 0px;}
+.pg-top-100 {    padding-top: 100px;}
 .contact h2 {text-align: center;margin: 0 0 40px;text-transform: uppercase;color: #fff;}
 .contact h2:before {margin: 0 auto 20px;}
-.contact .form-control {display: block; width: 100%; height: calc(1.5em + .75rem + 2px); padding: 0; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #fff; background-color: #000; background-clip: padding-box; border: 0px solid #ffffff; border-bottom: 1px solid #ffffff; border-radius: 0; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+.contact .form-control {display: block; width: 100%; height: calc(1.5em + .75rem + 2px); padding: 0; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #fff; background-color: transparent; background-clip: padding-box; border: 0px solid #ffffff; border-bottom: 1px solid #ffffff; border-radius: 0; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 .contact .form-group {margin-bottom: 30px;padding: 0 30px;}
 .contact .form-group textarea {height: 120px;}
 .contact .php-email-form button[type="submit"]:hover {background: #e8682d; }
@@ -832,6 +889,7 @@ section h2:before {
 ::-webkit-input-placeholder { /* Edge */ color: #fff; opacity: 1 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #fff; opacity: 1  }
 ::placeholder {color: #fff; opacity: 1  }
+.contact .form-control::placeholder { color: #fff;font-size: 14px;}
 
 
 /*--------------------------------------------------------------
