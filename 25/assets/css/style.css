@@ -508,7 +508,7 @@ color: #eb334f;}
 .theme_btn{background-color: #eb334f; font-size: 16px; color: #fff; padding: 18px 15px; height: 45px; display: inline-block; text-align: center; width: 150px; font-weight: 500; border-radius: 30px; text-transform: capitalize;transition: 0.2s;}
 .theme_btn:hover{color: #fff;text-decoration: none;}
 .theme_btn span{padding-left: 10px;}
-.main_bnner_sec{background-image: url(../images/banner_bg.png); background-repeat: no-repeat; background-position: center top; background-size: cover; width: 100%; height: 1065px; margin: 0px 0 0 0; }
+.main_bnner_sec{background-repeat: no-repeat; background-position: center top; background-size: cover; width: 100%; height: 1065px; margin: 0px 0 0 0; }
 .main_bnner_sec .container-fluid{position: relative;}
 .main_bnner_sec .container-fluid .rotate_para {content: ""; position: absolute; left: -130px; top: 0; bottom: 0; margin: auto; font-size: 16px; color: #fff; font-weight: 500; transform: rotate(270deg); width: 300px; height: 15px; letter-spacing: 5px; text-transform: uppercase; }
 .main_bnner_sec .container-fluid .banner_social {content: ""; position: absolute; right: 0px; top: 0; bottom: 0; margin: auto; width: 30px; height: 130px; }
@@ -552,8 +552,8 @@ color: #eb334f;}
 
 
 .main_testimonials_sec{position: relative; height: 800px; width: 100%; display: block; padding: 100px 0 100px 0; }
-.main_testimonials_sec:before{content: ""; position: absolute; left: 0; top: 0; width: 50%; height:100%; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url(../images/testimonials_left.png); }
-.main_testimonials_sec:after{content: ""; position: absolute; right: 0; top: 0; width: 50%; height: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url(../images/testimonials_right.png); z-index: -1; }
+.main_testimonials_sec:before{content: ""; position: absolute; left: 0; top: 0; width: 50%; height:100%; background-size: cover; background-repeat: no-repeat; background-position: center center;}
+.main_testimonials_sec:after{content: ""; position: absolute; right: 0; top: 0; width: 50%; height: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center; z-index: -1; }
 .main_paly_button{position: relative;}
 .play {position: absolute; width: 100px; height: 100px; left: 50%; top: 50%; transform: translate(-50%,-50%); }
 .play .video-btn {width: 94px; height: 94px; background: radial-gradient(#eb334f 50%, rgba(235, 51, 79, 0.46) 52%); border-radius: 50%; display: block; position: absolute; left: calc(50% - 47px); top: calc(50% - 47px); overflow: hidden; border-color: #eb334f; }
