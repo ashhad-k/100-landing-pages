@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: #3e9bdd;
+  background: #c75125;
   color: #fff;
 }
 
@@ -120,7 +120,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
     margin: 0 6px;
     }
-    #header a:hover {color: #f2622c;}
+#header a i:hover {color: #c75125;}
+#header a:hover {color: #f2622c;}
 
 #header.header-scrolled {
   border-color: #fff;
@@ -195,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat';
   font-weight: 500;
 }
+a.get-started-btn.scrollto:hover {background: #c75125; }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #f2622c;
@@ -484,9 +486,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 46px;
     border-radius: 0px;
 }
+
 .btn-primary:hover {
     color: #fff;
-    background-color: #f2622c;
+    background-color: #c75125;
     border-color: #f2622c;
 }
 
@@ -607,6 +610,9 @@ a.banner-btn {
     font-weight: 600;
     font-size: 12px;
 }
+a.banner-btn:hover { background: #ece9e9;}
+
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -677,7 +683,7 @@ font-size: 26px;}
 #howWeAre p {font-family: "Open Sans", sans-serif;}
 #howWeAre:before {content: '';width: 190px;height: 190px;display: block;position: absolute;left: -50px;opacity: 0.5;top: 40px;}
 #howWeAre figure {position: relative;float: right;}
-#howWeAre figure img {position: relative;z-index: 2;}
+#howWeAre figure img {position: relative;z-index: 2;    width: 100%;}
 #howWeAre figure:before {content: '';z-index: 1;width: 190px;height: 190px;display: block;position: absolute;right: -100px;opacity: 0.5;bottom: -80px;}
 
 
@@ -725,11 +731,24 @@ font-size: 26px;}
 .whatwe .slick-next {width:50px;height: 50px;right: auto;left: -60px;top: 190px;}
 
 @media screen and (max-width: 768px) {
-#whatwedo:after {display: none;}
+
 #whatwedo .slick-dots {display:none !Important;}
 .whatwe .slick-prev {display:none !Important;}
 .whatwe .slick-next{display:none !Important;}
 .whatwe .box p { font-size: 20px; }
+#whatwedo:after { width: 600px; height: 400px; bottom: -120px;}
+}
+
+@media screen and (max-width:812px) and (orientation: landscape) {
+#whatwedo .slick-dots {display:none !Important;}
+.whatwe .slick-prev {display:none !Important;}
+.whatwe .slick-next{display:none !Important;}
+.whatwe .box p { font-size: 20px; }
+#whatwedo:after { width: 600px; height: 400px; bottom: -120px;}
+}
+
+@media screen and (max-width: 767px){
+#whatwedo:after {width: 420px; }
 }
 
 
@@ -747,13 +766,16 @@ font-size: 26px;}
 .ourattorneys {background-repeat: no-repeat;background-position: 50%;background-size: cover;}
 .ourattorneys h2 {color: #fff;margin: 80px 0 20px;}
 .ourattorneys p {color: #fff;    margin-top: 30px;}
+.ourattorneys a { text-transform: uppercase; font-weight: 700; font-size: 18px;  line-height: 50px;}
+.ourattorneys a:hover {color:#c75125;}
 .ourattorneys .box {position: relative;width: 100%;}
 .ourattorneys .box img {max-width: 100%; }
 .ourattorneys .box p {font-size: 24px;font-weight: bold;text-align: left;color: #fff;position: absolute;left: 0;width: 100%;bottom: 0;padding: 20px 20px;line-height: 34px;}
 
+
 @media screen and (max-width: 768px) {
 #OURATTORNEYS {
-    padding: 50px 0 50px;
+    padding: 170px 0 50px;
     text-align: center;
 }
 .ourattorneys .box p {
@@ -769,41 +791,62 @@ font-size: 26px;}
     margin: 40px 0 0;
     text-align: center;
 }
+}
 
-
+@media screen and (max-width:812px) and (orientation: landscape) {
+#OURATTORNEYS {padding: 170px 0 100px;}
+.ourattorneys .box, .ourattorneys .box p {
+    text-align: center;
+}
 }
 
 /*--------------------------------------------------------------
-# Sections OURATTORNEYS
+# Sections CTA
 --------------------------------------------------------------*/
 
 
 .cta {background-repeat: no-repeat;background-position: 50%;background-size: cover;height: 700px;width: 100%;display: block;background-attachment: fixed;}
 .cta h2 {color: #fff;margin: 80px 0 20px;font-size: 80px;text-transform: uppercase;}
-
-@media screen and (max-width: 768px) {
-
-
-    .cta h2 {
-    color: #fff;
-    margin: 0;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-}
-.cta {
-    height: auto;
-    padding: 20px 0 40px;
-}
-
-
-}
-
 img.arrowdown2 {
     position: absolute;
     bottom: -200px;
     left: 50%;
 }
+.cta h2:before {display:none;}
+
+@media screen and (max-width: 768px) {
+.cta h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cta {
+    height: auto;
+    padding: 50px 0 140px;
+}
+
+img.arrowdown2 {
+    bottom: -60px;
+    left: 48%;
+}
+}
+
+@media screen and (max-width:812px) and (orientation: landscape) {.cta h2 {
+    font-size: 50px; text-align: center;margin: 0px 0 20px;
+}
+.cta {    height: 500px;}
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+.cta h2 {  font-size: 30px; }
+}
+
+
 
 
 
@@ -817,6 +860,7 @@ img.arrowdown2 {
 .WeFight h3 {font-size: 20px; font-weight: 600; text-transform: uppercase; margin: 18px 0; }
 .WeFight p {}
 .WeFight a {font-weight: 600; text-transform: uppercase; margin: 20px 0 2px; display: inline-block;    margin-bottom: 50px; }
+.WeFight a:hover {color: #c75125;}
 .WeFight img {}
 
 @media screen and (max-width: 768px) {
@@ -842,6 +886,7 @@ img.background {position: absolute; left: -130px;}
 --------------------------------------------------------------*/
 
 .newsevents {background: #f8f8f7; }
+.newsevents { padding-bottom: 40px;}
 .newsevents h2 {text-align: center;margin: 0 0 40px;text-transform: uppercase;}
 .newsevents h2:before {margin: 0 auto 20px;}
 .newsevents .box {border-bottom: solid 1px #c1c0c0;margin: 10px 32px 10px 10px;}
@@ -866,6 +911,23 @@ img.background {position: absolute; left: -130px;}
 .address a  {display: inline-block;margin: 20px 0 30px;color: #fff;font-size: 24px; font-weight: 400;
     text-decoration: underline;}
 .address span {color: #e7682d;font-size: 14px;}
+
+
+@media screen and (max-width: 768px){
+.address .box {
+    padding: 50px;
+    margin: 20px 20px;
+}
+}
+
+@media screen and (max-width:767px){
+.address .box {
+    padding: 50px 20px;
+    margin: 20px 30px;
+}
+}
+
+
 /*--------------------------------------------------------------
 # Sections address
 --------------------------------------------------------------*/
@@ -876,15 +938,16 @@ img.background {position: absolute; left: -130px;}
 # Sections contact
 --------------------------------------------------------------*/
 
-.contact {padding: 100px 0px;}
-.pg-top-100 {    padding-top: 100px;}
+.contact {padding: 100px 0px; background-size:cover !important;}
+.pg-top-100 {    padding-top: 80px;}
 .contact h2 {text-align: center;margin: 0 0 40px;text-transform: uppercase;color: #fff;}
 .contact h2:before {margin: 0 auto 20px;}
 .contact .form-control {display: block; width: 100%; height: calc(1.5em + .75rem + 2px); padding: 0; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #fff; background-color: transparent; background-clip: padding-box; border: 0px solid #ffffff; border-bottom: 1px solid #ffffff; border-radius: 0; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 .contact .form-group {margin-bottom: 30px;padding: 0 30px;}
 .contact .form-group textarea {height: 120px;}
 .contact .php-email-form button[type="submit"]:hover {background: #e8682d; }
-.contact .php-email-form button[type="submit"] {background: #e8682d; border: 0; padding: 10px 30px; color: #fff; transition: 0.4s; border-radius: 4px; display: inline-block; height: 46px; text-transform: uppercase; font-weight: bold; font-size: 14px; }
+.contact .php-email-form button[type="submit"] {background: #e8682d; border: 0; padding: 10px 80px; color: #fff; transition: 0.4s; border-radius: 2px; display: inline-block; height: 46px; text-transform: uppercase; font-weight: bold; font-size: 14px; }
+.contact .php-email-form button[type="submit"]:hover { background: #c75125;}
 
 ::-webkit-input-placeholder { /* Edge */ color: #fff; opacity: 1 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #fff; opacity: 1  }
@@ -899,8 +962,8 @@ img.background {position: absolute; left: -130px;}
 
 
 #footer {background: #000000;color: #fff;}
-#footer a {color: #fff;font-size: 24px;margin-left: 20px;}
-
+#footer a {color: #fff;font-size: 18px;margin-left: 20px;}
+.copyright { font-size: 14px;}
 
 
 @media screen and (max-width: 768px) {

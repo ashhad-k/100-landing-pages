@@ -696,7 +696,7 @@ a.nav-link.register_btn { width: 70%; font-size: 16px; color: #fff;padding: 13px
 .service_cont h2{font-size: 28px;margin: 30px 0 25px 0;}
 .main_testimonials_sec{height: auto;padding: 60px 0 60px 0;}
 .main_testimonials_sec:before{width: 100%;height: 200px;}
-.main_testimonials_sec:after{width: 100%;height: 435px;top:200px;}
+.main_testimonials_sec:after{width: 100%;height: 500px;top:200px;}
 .testi_inner {padding: 175px 0px 0px 0; }
 .play .video-btn {top: calc(50% - 0px); }
 .testi_inner p {font-size: 18px; padding: 29px 0 35px 0; }
@@ -746,7 +746,7 @@ a.nav-link.register_btn { width: 70%; font-size: 16px; color: #fff;padding: 13px
 .service_cont h2{font-size: 28px;margin: 30px 0 25px 0;}
 .main_testimonials_sec{height: auto;padding: 60px 0 60px 0;}
 .main_testimonials_sec:before{width: 100%;height: 200px;}
-.main_testimonials_sec:after{width: 100%;height: 435px;top:200px;}
+.main_testimonials_sec:after{width: 100%;height: 500px;top:200px;}
 .testi_inner {padding: 160px 0px 0px 0;text-align: center; }
 .play .video-btn {top: calc(50% - 0px); }
 .testi_inner p {font-size: 18px; padding: 29px 0 35px 0; }
@@ -790,7 +790,7 @@ a.nav-link.register_btn { width: 70%; font-size: 16px; color: #fff;padding: 13px
 .cta_cont h2 {font-size: 24px; }
 .person_img{width: 30%;}
 .person_cont{width: 30%;}
-.main_testimonials_sec:after {height: 488px; }
+.main_testimonials_sec:after {height: 540px; }
 
 
 }
