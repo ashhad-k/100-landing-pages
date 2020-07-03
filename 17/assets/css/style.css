@@ -2,9 +2,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/*
 html {
 	scroll-behavior: smooth;
 }
+*/
 
 body {
    font-family: 'Montserrat', sans-serif;
@@ -86,6 +88,10 @@ h2 {
 	padding: 0px 12px;
 }
 
+#header .bx:hover {
+    color: #24e09b;
+}
+
 @media screen and (max-width:767px) and (orientation: landscape) {
 #header .container {
 		max-width:100% !important;
@@ -122,7 +128,7 @@ nav.nav-menu.d-none.d-lg-block {
 /* Get Startet Button */
 
 .get-started-btn {
-  margin-left: 25px;
+  margin-left: 24px;
   background: #24e09b;
   color: #fff;
   border-radius: 5px;
@@ -138,6 +144,46 @@ nav.nav-menu.d-none.d-lg-block {
     background: #19ab75;
   color: #fff;
 }
+
+nav.nav-menu a {
+    color: #fff;
+    font-weight: 600;
+}
+
+nav.nav-menu li {
+    list-style: none;
+    float: left;
+    padding: 7px 15px;
+}
+.top-menu1 {
+    margin-top: 14px;
+}
+
+.top-menu2 {
+    display: none;
+}
+
+a.facebook, a.twitter, a.instagram {
+
+    display: inline-block !important;
+}
+
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #24e09b;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {nav.nav-menu li {
+    padding: 20px 8px;
+    font-size: 13px;
+}}
+
+@media only screen and (max-width: 768px) {nav.nav-menu {display:none;}}
+
+@media screen and (max-width:812px) and (orientation: landscape) {nav.nav-menu {display:none;}}
+
+@media screen and (max-width:767px){nav.nav-menu {display:none;}}
 
 
 
@@ -177,7 +223,7 @@ nav.nav-menu.d-none.d-lg-block {
   position: fixed;
   top: 55px;
   right: 15px;
-
+    text-align: center;
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
@@ -438,7 +484,7 @@ img.icon {
   font-size: 17px;
   border-bottom: 1px solid #ccc;
 }
-}
+
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -508,6 +554,13 @@ img.schedule-img {
     font-weight: 800;
     margin-top: 10px;
     border-radius: 4px;
+	transition: 0.2s;
+}
+
+.bottom-side button:hover {
+    background: #24e09b;
+    border: 2px solid #24e09b;
+    color: #fff;
 }
 
 .tab button.active:before {
@@ -967,6 +1020,10 @@ margin: 13px 11px;
 }
 	
 .back-to-top {color:#fff; float:right;}
+
+section#contact {
+    padding-bottom: 0px;
+}
 
 
 @media screen and (max-width:767px){
