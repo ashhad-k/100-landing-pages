@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 999999999;
   padding: 0px 0 0 30px;
   position: fixed;
+  margin-right:-15px;
 }
 #header a i {font-size: 18px;
     color: #fff;
@@ -337,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   border-radius: 10px;
   padding: 10px 0;
-  height: 350px;
+  height: 250px;
 }
 
 .mobile-nav * {
@@ -414,15 +415,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url("../img/banner.jpg") top right;
-  background-size: contain;
-  position: relative;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
+.banner {
+  width: 100% !important;
+  height: 800px !important;
+     background-repeat: no-repeat !important;
+    background-size:contain !important;
+
 }
 
 /*#hero:before {
@@ -463,6 +461,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     height: 60px;
 }
+input.form-control::placeholder { font-size: 13px;}
 #hero .topform .btn-primary {height: 60px;}
 #hero .topform textarea.form-control {height: 116px;}
 .btn-primary {
@@ -573,15 +572,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero {
+ /*#hero {
     background-attachment: fixed;
-  }
+  } */
 }
 
+@media screen and (max-width:767px){.slick-next {
+    right: -15px;
+}
+}
+
+
 @media (max-width: 992px), (max-height: 500) {
-  #hero {
-    height: auto;
-    background: #ffc722;
+.banner {
+    height: auto !important;
+    background: #ffc722 !important;
     text-align: center;
   }
   #hero h1 {
@@ -790,10 +795,14 @@ section h2:after {
 # Back to top cta
 --------------------------------------------------------------*/
 .cta {}
-.cta .container {background: url(../img/cta.jpg);height: 253px;padding: 70px 80px;}
+.cta .container {height: 245px;padding: 70px 80px;}
 .cta .container h3 {font-size: 30px; font-weight: 600; color: #ffffff; }
-.cta .container p {color: #fff; font-size: 18px; font-weight: 300; }
+.cta .container p {color: #fff; font-size: 13px; font-weight: 300;    line-height: 24px; }
 .cta .container a {margin: 20px 0 0; }
+
+.cta .btn-lg {font-size:15px;}
+
+
 
 @media (max-width: 992px) {
 
@@ -828,6 +837,12 @@ section h2:after {
     position: fixed;
 }
 }
+@media only screen and (max-width: 768px) {.OurNews article:before {display:none}
+.OurNews article {
+	    width: 33%;}
+}
+
+
 /*--------------------------------------------------------------
 # Back to top cta
 --------------------------------------------------------------*/
@@ -846,7 +861,7 @@ section h2:after {
 .services article {background: #f9f9f9;padding: 15px 25px 10px;position: relative;width: 100%;}
 .services article span {position: absolute; top: 21px; left: 0; right: 0; margin: 0 auto; color: #c4c4c4; font-weight: 500; }
 .services article h3 {color: #202020;font-size: 22px;font-weight: 400;margin: 0 0px 15px;}
-.services article p {line-height: 22px;}
+.services article p {line-height: 22px;    font-size: 12px;}
 /*--------------------------------------------------------------
 # Back to top services
 --------------------------------------------------------------*/
