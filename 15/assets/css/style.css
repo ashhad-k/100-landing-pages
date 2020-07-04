@@ -742,7 +742,7 @@ section {
 section {padding: 50px 0;}
 section h2 {font-size: 32px;color: #151f32;font-weight: 600;margin: 0 0 60px;position: relative;text-transform: capitalize;}
 section h2:after {background: #ffc722;content: '';width: 68px;height: 3px;display: block;margin: 50px 0 0px;position: absolute;bottom: -30px;left: 0;right: 0;padding: 0 0 0px;}
-section h2 span {display: block;font-weight: 400;font-size: 14px;color: #848891;font-style: italic;margin: 0 0 10px;}
+section h2 span {display: block;font-weight: 400;font-size: 14px;color: #848891;/*font-style: italic; */margin: 0 0 10px;}
 section p {color: #8d9097;font-size: 14px;line-height: 29px;margin-bottom: 40px;}
 
 
@@ -872,3 +872,5 @@ section h2:after {
 #footer {background: #181818;color: #787878;padding: 26px 0;}
 #footer a {font-size: 22px;color: #8c8c8c;margin-right: 20px;}
 #footer a:hover {color: #ffc722; }
+
+@media screen and (max-width:767px){#footer .social-links { margin-left: 13px; }}
