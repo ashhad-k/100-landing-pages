@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: #3e9bdd;
+  background: #d21717;
   color: #fff;
 }
 
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: -10px 0 0;
 }
 .nav-menu .get-started-btn {color: #FFF;}
-.nav-menu .get-started-btn:hover {color: #FFF;}
+.nav-menu .get-started-btn:hover {color: #fff !important; background:#d21717}
 .nav-menu a {
   display: block;
   position: relative;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav {
   position: fixed;
-  top: 55px;
+  top: 65px;
   right: 15px;
   bottom: 15px;
   left: 15px;
@@ -339,7 +339,8 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   border-radius: 10px;
   padding: 10px 20px;
-  height: 530px;
+  height: 500px;
+  text-align:center;
 }
 
 .mobile-nav * {
@@ -416,13 +417,11 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+.banner {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url("../img/banner.jpg") top center;
-  background-size: cover;
-  position: relative;
+  height: 100vh !important;  
+  background-size: cover !important;
+  position: relative !important;
 }
 
 /*#hero:before {
@@ -440,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 }*/
 
 #hero .topform {padding: 0;border-radius: 0;}
-#hero .topform h3 {color: #fff;font-size: 26px;font-weight: bold;margin: 0 0 15px 0;line-height: 28px;text-transform: uppercase;}
+#hero .topform h3 {color: #fff;font-size: 26px;font-weight: bold;margin: 0 0 15px 0;line-height: 28px;text-transform: uppercase;    font-family: 'Montserrat';}
 #hero .topform h3 span {
     font-size: 12px;
     display: block;
@@ -468,11 +467,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f72a2a;
     border-color: #f72a2a;
     height: 52px;
+   font-family: 'Montserrat';
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #f72a2a;
-    border-color: #f72a2a;
+    background-color: #d21717;
+    border-color: #d21717;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -693,7 +693,7 @@ section {padding: 130px 0;}
 
 .section-title {}
 .section-title h2 {color: #45484c;font-size: 36px;font-weight: 600;margin: 0 0 0px;}
-.section-title h2 span {color: #8b8c8d;font-size: 16px;font-weight: 500;display: block;margin: 0 0 20px;}
+.section-title h2 span {color: #8b8c8d;font-size: 16px;font-weight: 500;display: block;margin: 0 0 20px;    font-family: 'Montserrat';}
 .section-title p {color: #b2b2b2;font-size: 16px;font-weight: 400;}
 
 
@@ -764,11 +764,12 @@ ul.tabslist li.current a {color: #f72a2a; }
 .OurServices .box.thrd {margin-top: -60px;}
 
 .arrowBtn {transition: 0.5s;background: #f72a2a;color: #fff;font-size: 16px;font-weight: 600;width: 170px;display: inline-block;padding: 13px 25px;}
-.arrowBtn .arrowicon {background-image: url(../img/arrow.png);width: 27px;height: 9px;display: inline-block;float: right;margin: 8px 0 0;}
-.arrowBtn:hover {background: #e61b1b;color: #fff;}
+.arrowBtn .arrowicon {width: 27px;height: 9px;display: inline-block;float: right;margin: 8px 0 0;}
+.arrowBtn:hover {background: #d21717;color: #fff;}
 
 
-#OurCusine {overflow-x: hidden;padding: 70px 0;}
+#OurCusine {padding: 70px 0;}
+#OurCusine .row {margin-right:0px;}
 #OurCusine .container-fluid {padding-right: 0;padding-left: 0;}
 #OurCusine .container-fluid figure {position: relative;}
 #OurCusine figure .play-btn {
@@ -844,6 +845,11 @@ ul.tabslist li.current a {color: #f72a2a; }
   border-radius: 0;
 }
 
+img.side-bg {
+    position: absolute;
+    right: 0px;
+top: 50%}
+
 @-webkit-keyframes pulsate-btn {
   0% {
     transform: scale(0.6, 0.6);
@@ -865,6 +871,9 @@ ul.tabslist li.current a {color: #f72a2a; }
     opacity: 0;
   }
 }
+@media only screen and (max-width: 1024px) {
+
+#OurCusine .row {margin-right:-15px;}}
 
 
 
@@ -1007,7 +1016,6 @@ footer form input[type="submit"] {
   margin: 0;
   border-radius: 4px;
   font-size: 24px;
-  background-image: url(../img/submiticon.png);
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -1021,7 +1029,7 @@ footer form input[type="submit"]:hover {
 
 
 #hero .topform .form-group.half {width: 100%; display: inline-block; }
-.section-title h2 {font-size: 40px; line-height: 33px; }
+.section-title h2 {font-size: 35px; line-height: 43px; }
 .section-title h2 span {font-size: 20px;} 
 .blog-posts .member .member-img IMG {width: 100%; }
 .blog-posts .member {transition: 0.5s; width: 100%; }
