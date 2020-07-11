@@ -48,13 +48,13 @@ h2 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #2487ce;
+  background: linear-gradient(to right, #f95d96 0%,#c641e2 100%);
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #3e9bdd;
+background: linear-gradient(to right, #f95d96 0%,#c641e2 100%);
   color: #fff;
 }
 
@@ -528,10 +528,15 @@ margin: 20px 0 24px;}
  
  
  @media screen and (max-width:767px){
+
+.banBg .banTxt h1 {
+    font-size: 27px;}
+	
 	.banBg .banForm {
     position: relative;
 	width: 100%;
 	margin:auto;
+	 bottom: -30px;
 
 }
 .carousel-item, .w-100 { height:300px;}
@@ -567,6 +572,8 @@ margin: 20px 0 24px;}
 
 .servSec {
    text-align: center;
+	padding: 80px 0px 300px;
+    margin-top: 40px;
 }
 }
 
@@ -597,6 +604,10 @@ margin: 20px 0 24px;}
 .videoSec .videoBg p {
     max-width: 100%;
     padding: 10px;
+}
+
+.videoSec {
+    margin: 0 0 95px 0;
 }
 }
 
@@ -648,6 +659,9 @@ text-align: center; }
     width: 100%;
     float: none;
 }
+.choosSec2 {
+padding-bottom: 60px !important; }
+
 
 .choosSec .choseTxt .choseInfo {
     width: 100%;
@@ -667,7 +681,7 @@ text-align: center; }
 }
 .clientSec {
     background: none !important;
-	padding: 60px 0px !important;
+	padding: 40px 0px !important;
 
 }
 
@@ -722,7 +736,7 @@ text-align:center;
 --------------------------------------------------------------*/
 
 
-.newsSec { margin: 120px 0px; }
+.newsSec { padding: 120px 0px; }
 .newsSec h2 { text-align: center; margin-bottom: 50px; }
 .newsSec h5 { font-size: 18px; font-weight: 600; color: #343539; padding: 0px; margin: 40px 0 20px; }
 .newsSec p { font-size: 14px; font-weight: 300; color: #b4b4b4; padding: 0px; margin: 0px; }
@@ -730,7 +744,7 @@ text-align:center;
 @media screen and (max-width:767px){
 .newsSec {
 
-    margin: 120px 0px 50px;
+    padding: 90px 0px 30px;
     text-align: center;
 }
 
