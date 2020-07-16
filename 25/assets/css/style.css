@@ -508,7 +508,7 @@ color: #eb334f;}
 .theme_btn{background-color: #eb334f; font-size: 16px; color: #fff; padding: 18px 15px; height: 45px; display: inline-block; text-align: center; width: 150px; font-weight: 500; border-radius: 30px; text-transform: capitalize;transition: 0.2s;}
 .theme_btn:hover{color: #fff;text-decoration: none;}
 .theme_btn span{padding-left: 10px;}
-.main_bnner_sec{background-repeat: no-repeat; background-position: center top; background-size: cover; width: 100%; height: 1065px; margin: 0px 0 0 0; }
+.main_bnner_sec{background-repeat: no-repeat; background-position: center top; background-size: cover; width: 100%; /*height: 1065px;*/ margin: 0px 0 0 0;     padding: 230px 0px 170px;}
 .main_bnner_sec .container-fluid{position: relative;}
 .main_bnner_sec .container-fluid .rotate_para {content: ""; position: absolute; left: -130px; top: 0; bottom: 0; margin: auto; font-size: 16px; color: #fff; font-weight: 500; transform: rotate(270deg); width: 300px; height: 15px; letter-spacing: 5px; text-transform: uppercase; }
 .main_bnner_sec .container-fluid .banner_social {content: ""; position: absolute; right: 0px; top: 0; bottom: 0; margin: auto; width: 30px; height: 130px; }
@@ -675,13 +675,16 @@ a.nav-link.register_btn { width: 70%; font-size: 16px; color: #fff;padding: 13px
 .main-header {padding: 20px 0 40px 0; }
 .banner_cont p span{display: inline;}
 .main-header .navbar-nav{padding: 15px;}
+.main_porfolio_sec {  padding-bottom: 60px;}
+.main_testimonials_sec { padding: 40px 0 100px 0;
+}
 
 }
 
 
 @media screen and (max-width: 736px){
 	
-a.nav-link.register_btn { width: 70%; font-size: 16px; color: #fff;padding: 13px 50px; text-transform: uppercase;
+a.nav-link.register_btn { width: 73%; font-size: 16px; color: #fff;padding: 13px 50px; text-transform: uppercase;
     background-color: transparent; border: 1px solid #fff; height: auto; border-radius: 25px; margin: 0 auto;}
 .main-header {padding: 20px 0 20px 0; }
 .main_bnner_sec{height: auto;padding:160px 0 100px 0; }

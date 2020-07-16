@@ -30,7 +30,7 @@ html, body {scroll-behavior: smooth; }
 	color: #fff;
 	transition: 0.3s;
 	font-size: 13px;
-	font-weight: 300;
+	font-weight: 600;
 }
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
 	color: var(--main-color);
@@ -103,7 +103,7 @@ html, body {scroll-behavior: smooth; }
 	}
 }
 
-@media only screen and (max-width: 1024px) {.nav-menu a {padding: 10px 11px;}}
+
 
 @media (max-width: 768px) {
 	.get-started-btn {
@@ -321,11 +321,9 @@ span.icon-facebook2:hover, span.icon-twitter2:hover, span.icon-instagram:hover {
 ul.nav-menu { margin-right: 15px;}
 ul.nav-menu li {float:left; list-style:none;}
 .nav-menu a{
-    display: block !important;
-    position: relative !important;
-    font-weight: 600 !important;
-	padding:10px 15px !important;
-outline: none !important; }
+ 
+	padding:10px 15px;
+outline: none; }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
 color: #6cdd99 !important;}
@@ -451,10 +449,15 @@ a.theme_btn:hover { background: #5cb781;}
 
 @media screen and (max-width: 1024px){
 
+
+.h1_heading { font-size: 47px;line-height: 58px;
+}
+
 .main-header .navbar-nav a {font-size: 9px;}
 ul.nav-menu { margin-right: 0px;}
 .play_button {left: calc(50% - 50%); width: auto; }
 .feature_box h3{font-size: 24px;}
+.nav-menu a {padding: 10px 8px;}
 
 }
 

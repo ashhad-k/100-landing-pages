@@ -157,14 +157,14 @@ a:hover {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #2487ce;
+  background: #f470b3;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #3e9bdd;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -454,7 +454,7 @@ a:hover {
 .mobile-nav a {
 	display: block;
 	position: relative;
-    color: #fff !important;
+    color: #fff;
     padding: 10px 20px;
     font-weight: 600;
 	outline: none;
@@ -465,8 +465,7 @@ a:hover {
 .mobile-nav a span {padding: 10px 0px;}
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-	color: var(--main-color);
-	;
+	color: #f470b3;
 	text-decoration: none;
 }
 .mobile-nav .drop-down > a:after {
@@ -524,7 +523,7 @@ button.mobile-nav-toggle.d-lg-none {
 }
 .icofont-close:before {
     content: "\eee4";
-    color: #6adb97;
+    color: #f470b3;
 }
 
 .mobile-nav-active .mobile-nav {
@@ -547,12 +546,25 @@ span.icon-facebook2:hover, span.icon-twitter2:hover, span.icon-instagram:hover {
 
 }
 
-@media screen and (max-width:812px) and (orientation: landscape) {
-.top-rhs {display:none;}
-.mobile-nav-toggle {right: 75px;}
+.navbar-light .navbar-toggler-icon:before {
+    content: "\efa2";
+    color: #fff;
 }
+.navbar-toggler:focus{ outline: none;}
+ul.nav-menu { margin-right: 15px;}
+ul.nav-menu li {float:left; list-style:none;}
 
 
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+color: #fff !important;}
+
+
+
+@media screen and (max-width: 1024px){
+
+.main-header .navbar-nav a {font-size: 9px;}
+ul.nav-menu { margin-right: 0px;}
+}
 
 @media (max-width: 768px) {
 	.top-rhs2 {
@@ -569,28 +581,11 @@ span.icon-facebook2:hover, span.icon-twitter2:hover, span.icon-instagram:hover {
 	.top-rhs2 .social-links a{ color: #313131; font-size: 20px;}
 }
 
-.navbar-light .navbar-toggler-icon:before {
-    content: "\efa2";
-    color: #fff;
+
+@media screen and (max-width:812px) and (orientation: landscape) {
+.top-rhs {display:none;}
+.mobile-nav-toggle {right: 75px;}
 }
-.navbar-toggler:focus{ outline: none;}
-ul.nav-menu { margin-right: 15px;}
-ul.nav-menu li {float:left; list-style:none;}
-
-
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-color: #fff !important;}
-
-
-
-
-@media screen and (max-width: 1024px){
-
-.main-header .navbar-nav a {font-size: 9px;}
-ul.nav-menu { margin-right: 0px;}
-}
-
-
 
 @media screen and (max-width: 768px){
 ul.nav-menu li { float: none; padding: 6px;}
@@ -604,10 +599,11 @@ a.register_btn {
     margin: 0px auto;
 margin-top:40px }
 .navbar-toggler{z-index: 99;}
+
+button.mobile-nav-toggle.d-lg-none {
+    margin-top: -8px;
 }
-
-
-
+}
 
 
 @media screen and (max-width: 736px){
@@ -621,7 +617,13 @@ a.register_btn {
     display: block;
     margin: 0px auto;
 margin-top:40px }
-.nav-menu a{font-size:14px !important;}}
+.nav-menu a{font-size:14px !important;}
+
+button.mobile-nav-toggle.d-lg-none {
+    margin-top: -3px;
+}
+
+}
 
 /*--------------------------------------------------------------
 # BANNER SECTION AND FORM
@@ -750,7 +752,10 @@ content: '';
 .banBg .banForm .field input[type="text"]::placeholder { font-size: 12px; opacity: .6;}
 .banBg .banForm textarea::placeholder { font-size: 12px; opacity: .6;}
 .banBg .banForm .field input[type="submit"] {background: #f470b3;width: 100%; height: 50px; border-radius: 24px; text-align: center; font-size: 14px; font-weight: 500; color: #fff; cursor: pointer;    border: none; }
-
+.banBg .banForm .field input[type="submit"]:hover, .contact .php-email-form button[type="submit"]:hover {
+    background: #5e2dff;
+    color: #fff;
+}
 
 .social-link {
     display: flex;
@@ -1432,11 +1437,11 @@ section.solution {
     width: 100%;
 }
 
-
+/*
 .contact .php-email-form button[type="submit"]:hover {
   background: #c55990;
 }
-
+*/
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1454,6 +1459,13 @@ section.solution {
     transform: rotate(360deg);
   }
 }
+@media only screen and (max-width: 768px) {
+.contact .info {
+    padding: 40px 30px;
+}
+.mt-5 {margin-top:0px;}
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs

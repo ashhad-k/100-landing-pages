@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-  padding: 0 0 0 18px;
+  padding: 0 11px 0 12px;
 }
 .nav-menu > ul > li.soc a {display: inline-block; }
 
@@ -184,12 +184,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat';
+  font-weight: 500;
   text-transform: capitalize;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #3ab364;
+  color: #3ab364 !important;
 }
 
 .nav-menu .drop-down ul {
@@ -272,7 +273,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Get Startet Button */
 .get-started-btn {
-  margin-left: 25px;
   background: #3ab364;
   color: #fff;
   border-radius: 5px;
@@ -287,6 +287,13 @@ h1, h2, h3, h4, h5, h6 {
 .get-started-btn:hover {
   background: #0da241;
   color: #fff;
+}
+#header a i:hover {
+    color: #3ab364;
+}
+
+a.get-started-btn.scrollto:hover {
+    color: #fff !important;
 }
 
 @media (max-width: 768px) {
@@ -2433,10 +2440,25 @@ section {
 
 .mobile-nav > ul > li.soc {text-align: center;padding: 20px 0;}
 .mobile-nav > ul > li.soc a {text-align: center;display: inline-block;font-size: 24px;}
+
+section.vsection article {
+    padding-bottom: 60px;
+}
+
+section.vsection .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
 }
 @media screen and (max-width:767px){
 .blog-posts .member .member-info {
     text-align: center;
 }
+
+.box {margin:10px 20px;}
+.box.featured {margin: 10px 20px;}
+
 }
 

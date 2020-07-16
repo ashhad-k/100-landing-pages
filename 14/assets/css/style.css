@@ -190,8 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: capitalize;
+text-transform: capitalize;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -873,7 +872,8 @@ top: 50%}
 }
 @media only screen and (max-width: 1024px) {
 
-#OurCusine .row {margin-right:-15px;}}
+#OurCusine .row {margin-right:0px;}
+}
 
 
 
@@ -1067,11 +1067,40 @@ footer h3 {
     margin: 30px 0 30px;
 }
 
+section#about .section-title {
+    margin-top: 60px;
+}
+
+section#Service .section-title {
+    margin-bottom: 60px;
+}
+section#clientsfeedback br {
+    display: none;
+}
+.about .col-lg-6 {
+    padding-right: 0px;
+}
+.about .section-title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+footer form input[type="email"] {
+    width: 80%;
 
 }
 
-
-
+@media screen and (max-width:767px){
+.about .col-lg-6 {
+    padding: 0px;
+}
+.slick-next {
+    right: -32px !important;
+}
+#OurCusine .row {
+    padding: 0px;
+    margin: 0px;
+}
+}
 
 
 ::-webkit-input-placeholder { /* Edge */

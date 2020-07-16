@@ -691,7 +691,14 @@ and (orientation : landscape) {
 .top_left-bar{text-align: center;}
 .top_left-bar p { font-size: 12px; font-weight: 400;}
 .subscribe_sec button { width: 130px;}
+section.main_about_sec .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
+.about_cont {
+    padding-bottom: 60px;
+}
 
 
 }

@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: #ffc722;
+  background: #000;
   color: #fff;
 }
 
@@ -192,7 +192,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat';
+    font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -747,7 +748,7 @@ section p {color: #8d9097;font-size: 14px;line-height: 29px;margin-bottom: 40px;
 
 
 /*--------------------------------------------------------------
-# Back to top about
+# about
 --------------------------------------------------------------*/
 
 .about {}
@@ -762,16 +763,15 @@ section h2:after {
     margin: 50px auto 0px;}
 }
 
+@media (max-width: 767px) {
+#about .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
+}
 /*--------------------------------------------------------------
-# Back to top about
---------------------------------------------------------------*/
-
-
-
-
-/*--------------------------------------------------------------
-# Back to top Our News
+# Our News
 --------------------------------------------------------------*/
 
 .OurNews {text-align: center;}

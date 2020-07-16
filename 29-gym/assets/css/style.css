@@ -750,6 +750,13 @@ section h2 span {font-size: 24px;}
 
 
 
+@media screen and (max-width:768px){
+.bookvisit article {
+    text-align: center;
+}
+}
+
+
 @media screen and (max-width:767px){
 .bookvisit { text-align: center;}
 }
