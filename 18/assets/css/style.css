@@ -12,6 +12,10 @@ html, body {scroll-behavior: smooth; }
 .main-header .navbar-brand img{}
 .navbar-light .navbar-toggler-icon {
     background-image: url('../images/navbar-icon2.png');
+    background-size: 80%;
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline: none;
 }
 .navbar-light .navbar-toggler-icon:focus {outline:none;}
 .inp_btn_field input:hover, .main-header .navbar-nav .nav-item .shpbtn:hover, a.theme_btn:hover, .scroll_Top a:hover, li.sb_btn input:hover {

@@ -66,6 +66,7 @@ a.btn-simple-color {
     border-radius: 26px;
 	transition: 0.2s;
 	border: 1px solid #f470b3;
+	margin-right:15px;
 }
 
 a.btn-simple-register {
@@ -96,7 +97,7 @@ a.btn-simple3 {
     line-height: 100px;
     border-radius: 26px;
 	font-size:14px;
-	margin-left:15px;
+	
 	transition: 0.2s;
 }
 

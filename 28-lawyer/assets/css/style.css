@@ -895,6 +895,13 @@ img.background {position: absolute; left: -130px;}
 .newsevents a  {width: 39px;height: 11px;display: block;margin: 20px 0;}
 
 
+@media screen and (max-width:767px){
+.newsevents .box {
+    margin: 10px 10px 10px 10px;
+}
+}
+
+
 /*--------------------------------------------------------------
 # Sections newsevents
 --------------------------------------------------------------*/
